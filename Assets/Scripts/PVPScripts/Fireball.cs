@@ -32,6 +32,8 @@ public class Fireball : MonoBehaviour
     Vector2 lookDirection;
     float lookAngle;
 
+    public float damage;
+    public float baseDamage = 15;
     private PhotonView photonView;
 
     private void Start()
@@ -44,6 +46,7 @@ public class Fireball : MonoBehaviour
         cooldownTimer = cooldownTime;
         fireOverlay.enabled = false;
         photonView = gameObject.GetComponent<PhotonView>();
+        damage = baseDamage;
     }
 
     void Update()

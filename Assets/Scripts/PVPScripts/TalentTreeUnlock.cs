@@ -14,7 +14,7 @@ public class TalentTreeUnlock : MonoBehaviour
     private float textTimer;
     private float textTimerDuration = 2f;
     private bool textTimerBool = false;
-    public GameObject fireball;
+    public Fireball fireball;
     private PlayerMovement pm;
 
     public bool TT1IsUnlocked = false;
@@ -40,6 +40,7 @@ public class TalentTreeUnlock : MonoBehaviour
     {
         pr = GameObject.FindGameObjectWithTag("Dummy").GetComponent<PlayerResources>();
         pm = GameObject.FindGameObjectWithTag("Dummy").GetComponent<PlayerMovement>();
+        fireball = GameObject.FindGameObjectWithTag("Dummy").GetComponent<Fireball>();
         meteor = GameObject.FindGameObjectWithTag("Dummy").GetComponent<Meteor>();
         incinerate = GameObject.FindGameObjectWithTag("Dummy").GetComponent<Incinerate>();
         ttpErrors = GameObject.FindGameObjectWithTag("ErrorTalentText").GetComponent<Text>();
@@ -122,7 +123,7 @@ public class TalentTreeUnlock : MonoBehaviour
         if (TT2IsUnlocked == false && pr.currentTalentPoints > 0)
         {
             TT2IsUnlocked = true;
-            fireball.GetComponent<Projectile>().damage += 2;
+            fireball.damage += 2;
             pr.currentTalentPoints--;
         }
         else if (pr.currentTalentPoints <= 0 && !TT2IsUnlocked)
@@ -146,7 +147,7 @@ public class TalentTreeUnlock : MonoBehaviour
         if (TT21IsUnlocked == false && pr.currentTalentPoints > 1 && TT2IsUnlocked)
         {
             TT21IsUnlocked = true;
-            fireball.GetComponent<Projectile>().damage += 2;
+            fireball.damage += 2;
             pr.currentTalentPoints -= 2;
         }
         else if (pr.currentTalentPoints <= 1 && !TT21IsUnlocked)
@@ -171,7 +172,7 @@ public class TalentTreeUnlock : MonoBehaviour
         if (TT211IsUnlocked == false && pr.currentTalentPoints > 2 && TT21IsUnlocked)
         {
             TT211IsUnlocked = true;
-            fireball.GetComponent<Projectile>().damage += 2;
+            fireball.damage += 2;
             pr.currentTalentPoints -= 3;
         }
         else if (pr.currentTalentPoints <= 2 && !TT211IsUnlocked)
@@ -286,7 +287,7 @@ public class TalentTreeUnlock : MonoBehaviour
             textTimerBool = true;
             ttpErrors.text = "Learn the Tier 1 first!";
         }
-        if (TT41IsUnlocked == false && pr.currentTalentPoints > 2 && TT4IsUnlocked)
+        if (TT41IsUnlocked == false && pr.currentTalentPoints > 1 && TT4IsUnlocked)
         {
             pm.extraJumpValue += 1;
             textTimerBool = true;

@@ -240,7 +240,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     private void Update()
     {
         maxPlayers = dropdown.value + 2;
-        Debug.Log(maxPlayers);
         if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount <= maxPlayers)
         {
             playButton.SetActive(true);
@@ -249,7 +248,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         {
             playButton.SetActive(false);
         }
-        
     }
 
     public void OnClickPlayButton()

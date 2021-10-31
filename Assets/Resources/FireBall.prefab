@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 4760327381794736}
   - component: {fileID: 7152466545444071523}
   - component: {fileID: 3977783297336837359}
-  - component: {fileID: 4997768960027582441}
   - component: {fileID: 1032249358640544004}
   - component: {fileID: 9145134513183942732}
   - component: {fileID: -4032345558593760613}
   - component: {fileID: 5866641453134137859}
+  - component: {fileID: -8735259832038476040}
   m_Layer: 0
   m_Name: FireBall
   m_TagString: FireBallBullet
@@ -75,21 +75,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.3
---- !u!114 &4997768960027582441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157088314812518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de90278e1036ca74996e6f7026f34670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 17
-  photonView: {fileID: -4032345558593760613}
-  baseDamage: 15
 --- !u!114 &1032249358640544004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +158,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   photonView: {fileID: -4032345558593760613}
+--- !u!114 &-8735259832038476040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157088314812518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 294ea068954e6d9419187e43f4c055a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  photonView: {fileID: -4032345558593760613}
+  baseDamage: 15
 --- !u!1 &1233283920887408
 GameObject:
   m_ObjectHideFlags: 0

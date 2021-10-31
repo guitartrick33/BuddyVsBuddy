@@ -23,7 +23,8 @@ public class PlayerResources : MonoBehaviour
     private float healthPercentage;
     
     public HealthBar healthBar;
-
+    public Text onCollision;
+    
     private PlayerMovement pm;
 
     public bool isWinner;
@@ -66,6 +67,12 @@ public class PlayerResources : MonoBehaviour
                 isWinner = true;
                 photonView.RPC("LoadLastScene", RpcTarget.All, null);
             }
+
+            if (other.gameObject.tag == "Coin")
+            {
+                onCollision.text = "+1 Talent Point!";
+                StartCoroutine(WaitForSeconds());
+            }
         }
     }
 
@@ -74,6 +81,12 @@ public class PlayerResources : MonoBehaviour
     {
         winnerNickname.GetComponent<SaveNickName>().winnerNick = pm.nickName.text;
         SceneManager.LoadScene("gameover");
+    }
+
+    IEnumerator WaitForSeconds()
+    {
+        yield return new WaitForSeconds(2);
+        onCollision.text = string.Empty;
     }
     
     
