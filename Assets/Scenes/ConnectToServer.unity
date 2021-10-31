@@ -1,0 +1,4393 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &122250237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 122250240}
+  - component: {fileID: 122250239}
+  - component: {fileID: 122250238}
+  m_Layer: 5
+  m_Name: ErrorText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &122250238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122250237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.4245283, g: 0.15328881, b: 0.11013707, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &122250239
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122250237}
+  m_CullTransparentMesh: 1
+--- !u!224 &122250240
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122250237}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.013636716, y: 0.013636716, z: 0.013636716}
+  m_Children: []
+  m_Father: {fileID: 495079662}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -1366.9, y: -385.51}
+  m_SizeDelta: {x: 186.4561, y: 20.5336}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &130404963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130404964}
+  - component: {fileID: 130404967}
+  - component: {fileID: 130404966}
+  - component: {fileID: 130404965}
+  - component: {fileID: 130404968}
+  m_Layer: 5
+  m_Name: Nickname
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &130404964
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130404963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.025659813, y: 0.03332443, z: 0.03332443}
+  m_Children:
+  - {fileID: 303895324}
+  - {fileID: 1591257553}
+  m_Father: {fileID: 495079662}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -685.49, y: -384.86}
+  m_SizeDelta: {x: 179.6785, y: 29.3657}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &130404965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130404963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.5882353}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 130404966}
+  m_TextComponent: {fileID: 1591257554}
+  m_Placeholder: {fileID: 303895325}
+  m_ContentType: 0
+  m_InputType: 0
+  m_AsteriskChar: 42
+  m_KeyboardType: 0
+  m_LineType: 0
+  m_HideMobileInput: 0
+  m_CharacterValidation: 0
+  m_CharacterLimit: 0
+  m_OnEndEdit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_CustomCaretColor: 0
+  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_Text: 
+  m_CaretBlinkRate: 0.85
+  m_CaretWidth: 1
+  m_ReadOnly: 0
+  m_ShouldActivateOnSelect: 1
+--- !u!114 &130404966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130404963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7364a4590b0bc38428e39dd6dc8e7a65, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &130404967
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130404963}
+  m_CullTransparentMesh: 1
+--- !u!114 &130404968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130404963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!1 &303895323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303895324}
+  - component: {fileID: 303895326}
+  - component: {fileID: 303895325}
+  m_Layer: 5
+  m_Name: Placeholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &303895324
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303895323}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0365086, y: 0.7538244, z: 0.7538244}
+  m_Children: []
+  m_Father: {fileID: 130404964}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.21984863, y: -0.31997967}
+  m_SizeDelta: {x: 1.89, y: 10.439}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &303895325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303895323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Nickname...
+--- !u!222 &303895326
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303895323}
+  m_CullTransparentMesh: 1
+--- !u!1 &495079658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495079662}
+  - component: {fileID: 495079661}
+  - component: {fileID: 495079660}
+  - component: {fileID: 495079659}
+  m_Layer: 5
+  m_Name: WorldSpaceCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &495079659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495079658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &495079660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495079658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!223 &495079661
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495079658}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &495079662
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495079658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 690206943}
+  - {fileID: 747689350}
+  - {fileID: 130404964}
+  - {fileID: 122250240}
+  - {fileID: 1994851260}
+  - {fileID: 992646992}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 685.5, y: 385.5}
+  m_SizeDelta: {x: 1371, y: 771}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &597511298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 597511299}
+  - component: {fileID: 597511302}
+  - component: {fileID: 597511301}
+  - component: {fileID: 597511300}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &597511299
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597511298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &597511300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597511298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &597511301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597511298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &597511302
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597511298}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!1 &609551154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 609551157}
+  - component: {fileID: 609551156}
+  - component: {fileID: 609551155}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &609551155
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609551154}
+  m_Enabled: 1
+--- !u!20 &609551156
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609551154}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.21568628, g: 0.7372549, b: 0.8862745, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &609551157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609551154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &690206942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 690206943}
+  - component: {fileID: 690206945}
+  - component: {fileID: 690206944}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &690206943
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690206942}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 495079662}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -685.48627, y: -385.51}
+  m_SizeDelta: {x: 17.8098, y: 10.0467}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &690206944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690206942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.21568628, g: 0.7372549, b: 0.8862745, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f7f681cd213d9a7488500ce745f2d4f8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &690206945
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690206942}
+  m_CullTransparentMesh: 1
+--- !u!1 &747689349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 747689350}
+  - component: {fileID: 747689353}
+  - component: {fileID: 747689352}
+  - component: {fileID: 747689351}
+  m_Layer: 5
+  m_Name: ConnectButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &747689350
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747689349}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.023390057, y: 0.023390057, z: 0.023390057}
+  m_Children:
+  - {fileID: 827965029}
+  m_Father: {fileID: 495079662}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -685.49, y: -386.59}
+  m_SizeDelta: {x: 192.6328, y: 46.0426}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &747689351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747689349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.5377358, g: 0.45403165, b: 0.45403165, a: 0.39215687}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 747689352}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1129888822}
+        m_TargetAssemblyTypeName: LoadServer, Assembly-CSharp
+        m_MethodName: OnClickConnect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &747689352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747689349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c9006339b2156b142934eac2999ef67c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &747689353
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747689349}
+  m_CullTransparentMesh: 1
+--- !u!1 &827965028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 827965029}
+  - component: {fileID: 827965031}
+  - component: {fileID: 827965030}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &827965029
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827965028}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.22751121, y: 0.22751121, z: 0.22751121}
+  m_Children: []
+  m_Father: {fileID: 747689350}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0011901855, y: -0.00086402893}
+  m_SizeDelta: {x: 668.63, y: 145.14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &827965030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827965028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
+    m_FontSize: 100
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: Connect
+--- !u!222 &827965031
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827965028}
+  m_CullTransparentMesh: 1
+--- !u!1 &992646991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992646992}
+  - component: {fileID: 992646995}
+  - component: {fileID: 992646994}
+  - component: {fileID: 992646993}
+  m_Layer: 5
+  m_Name: QuitButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &992646992
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992646991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.010658849, y: 0.0123909125, z: 0.010658849}
+  m_Children:
+  - {fileID: 1783672749}
+  m_Father: {fileID: 495079662}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -685.49, y: -389.84}
+  m_SizeDelta: {x: 203.7494, y: 48.9586}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &992646993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992646991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.5377358, g: 0.45403165, b: 0.45403165, a: 0.39215687}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 992646994}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1129888822}
+        m_TargetAssemblyTypeName: LoadServer, Assembly-CSharp
+        m_MethodName: OnClickQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &992646994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992646991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c9006339b2156b142934eac2999ef67c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &992646995
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992646991}
+  m_CullTransparentMesh: 1
+--- !u!1 &1129888821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1129888823}
+  - component: {fileID: 1129888825}
+  - component: {fileID: 1129888824}
+  - component: {fileID: 1129888822}
+  m_Layer: 0
+  m_Name: ConnectToServer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1129888822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129888821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde6b7866748f7e4d8c6353e84c6ba34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usernameInput: {fileID: 130404965}
+  buttonText: {fileID: 827965030}
+  badWordsFilter: {fileID: 1129888825}
+  errorText: {fileID: 122250238}
+--- !u!4 &1129888823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129888821}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5102366, y: 1.458203, z: -4310.183}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129888824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129888821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1b6c185c1529042a208655f2e5a9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainInputField: {fileID: 130404965}
+  maxCharacters: 12
+--- !u!114 &1129888825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129888821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83bfd2811ad5c1941b80208e9f019df3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  badWords:
+  - 2 girls 1 cup
+  - 2g1c
+  - 4r5e
+  - 5h1t
+  - 5hit
+  - 5ht
+  - 666
+  - '@$$'
+  - a s s
+  - a s shole
+  - a55
+  - a55hole
+  - a_s_s
+  - abbo
+  - abeed
+  - abuse
+  - acrotomophilia
+  - aeolus
+  - africoon
+  - ahole
+  - alabama hot pocket
+  - alaskan pipeline
+  - alligator bait
+  - alligatorbait
+  - amcik
+  - anal
+  - analannie
+  - analprobe
+  - analsex
+  - andskota
+  - anilingus
+  - anus
+  - apeshit
+  - ar5e
+  - arabush
+  - arabushs
+  - areola
+  - areole
+  - argie
+  - arian
+  - armo
+  - armos
+  - aroused
+  - arrse
+  - arschloch
+  - arse
+  - arsehole
+  - aryan
+  - ash0le
+  - ash0les
+  - asholes
+  - ass monkey
+  - ass
+  - ass-fucker
+  - ass-hat
+  - ass-pirate
+  - assbag
+  - assbagger
+  - assbandit
+  - assbang
+  - assbanged
+  - assbanger
+  - assbangs
+  - assbite
+  - assblaster
+  - assclown
+  - asscock
+  - asscowboy
+  - asscracker
+  - asses
+  - assface
+  - assfuck
+  - assfucker
+  - assfukka
+  - assgoblin
+  - assh0le
+  - assh0lez
+  - asshat
+  - asshead
+  - assho1e
+  - asshole
+  - assholes
+  - assholz
+  - asshopper
+  - asshore
+  - assjacker
+  - assjockey
+  - asskiss
+  - asskisser
+  - assklown
+  - asslick
+  - asslicker
+  - asslover
+  - assman
+  - assmaster
+  - assmonkey
+  - assmunch
+  - assmuncher
+  - assnigger
+  - asspacker
+  - asspirate
+  - asspuppies
+  - assrammer
+  - assranger
+  - assshit
+  - assshole
+  - asssucker
+  - asswad
+  - asswhole
+  - asswhore
+  - asswipe
+  - asswipes
+  - auto erotic
+  - autoerotic
+  - ayir
+  - azazel
+  - azz
+  - azzhole
+  - b a s t a r d
+  - b i t c h
+  - b o o b
+  - b!+ch
+  - b!tch
+  - b!tchin
+  - b*tch
+  - b00b
+  - b00bies
+  - b00biez
+  - b00bs
+  - b00bz
+  - b17ch
+  - b1tch
+  - b7ch
+  - babeland
+  - babes
+  - baby batter
+  - baby juice
+  - backdoor
+  - backdoorman
+  - badfuck
+  - bagging
+  - ball gag
+  - ball gravy
+  - ball kicking
+  - ball licking
+  - ball sack
+  - ball sucking
+  - ballbag
+  - balllicker
+  - ballsack
+  - bampot
+  - bangbro
+  - bangbros
+  - banger
+  - banging
+  - bareback
+  - barely legal
+  - barelylegal
+  - barenaked
+  - barf
+  - barface
+  - barfface
+  - bassterd
+  - bassterds
+  - bastard
+  - bastardo
+  - bastards
+  - bastardz
+  - basterds
+  - basterdz
+  - bastinado
+  - bawdy
+  - bazongas
+  - bazooms
+  - bbw
+  - bdsm
+  - beaner
+  - beaners
+  - beaney
+  - beaneys
+  - beardedclam
+  - beastality
+  - beastial
+  - beastiality
+  - beastility
+  - beatch
+  - beatoff
+  - beatyourmeat
+  - beaver cleaver
+  - beaver lips
+  - beaver
+  - beef curtains
+  - beeyotch
+  - bellend
+  - beotch
+  - bestial
+  - bestiality
+  - bi curious
+  - bi+ch
+  - bi7ch
+  - biatch
+  - bicurious
+  - big black
+  - big breasts
+  - big knockers
+  - big tits
+  - bigass
+  - bigbastard
+  - bigbreasts
+  - bigbutt
+  - bigtits
+  - bimbo
+  - bimbos
+  - bint
+  - birdlock
+  - bitch
+  - bitchass
+  - bitched
+  - bitcher
+  - bitchers
+  - bitches
+  - bitchez
+  - bitchin
+  - bitching
+  - bitchslap
+  - bitchtit
+  - bitchy
+  - biteme
+  - bitties
+  - black cock
+  - blackcock
+  - blackman
+  - blackout
+  - blacks
+  - blonde action
+  - blonde on blonde action
+  - blonde on blonde
+  - bloodclaat
+  - bloody
+  - blow j
+  - blow job
+  - blow your l
+  - blow your load
+  - blowjob
+  - blowjobs
+  - blue waffle
+  - bluegum
+  - bluegums
+  - blumpkin
+  - bo ob
+  - bo obs
+  - boang
+  - boche
+  - boches
+  - bodily
+  - boffing
+  - bogan
+  - bohunk
+  - boink
+  - boiolas
+  - bollick
+  - bollock
+  - bollocks
+  - bollok
+  - bollox
+  - bombers
+  - bombing
+  - bomd
+  - bondage
+  - boned
+  - boner
+  - boners
+  - bong
+  - boob
+  - boobies
+  - boobs
+  - booby
+  - boobz
+  - boody
+  - booger
+  - bookie
+  - boong
+  - boonga
+  - boongas
+  - boongs
+  - boonie
+  - boonies
+  - booobs
+  - boooobs
+  - booooobs
+  - booooooobs
+  - bootee
+  - bootlip
+  - bootlips
+  - booty call
+  - booty
+  - bootycall
+  - boozer
+  - boozy
+  - bosch
+  - bosche
+  - bosches
+  - boschs
+  - bosomy
+  - bounty bar
+  - bounty bars
+  - bountybar
+  - brea5t
+  - breastjob
+  - breastlover
+  - breastman
+  - brothel
+  - brown showers
+  - brunette action
+  - btch
+  - buceta
+  - buddhahead
+  - buddhaheads
+  - buffies
+  - bugger
+  - buggered
+  - buggery
+  - bukkake
+  - bule
+  - bules
+  - bullcrap
+  - bulldike
+  - bulldyke
+  - bullet vibe
+  - bullshit
+  - bullshits
+  - bullshitted
+  - bullturds
+  - bumblefuck
+  - bumfuck
+  - bung hole
+  - bung
+  - bunga
+  - bungas
+  - bunghole
+  - bunny fucker
+  - burr head
+  - burr heads
+  - burrhead
+  - burrheads
+  - butchbabes
+  - butchdike
+  - butchdyke
+  - butt plug
+  - butt-pirate
+  - buttbang
+  - buttcheeks
+  - buttface
+  - buttfuck
+  - buttfucker
+  - buttfuckers
+  - butthead
+  - butthole
+  - buttman
+  - buttmuch
+  - buttmunch
+  - buttmuncher
+  - buttons
+  - buttpirate
+  - buttplug
+  - buttstain
+  - buttwipe
+  - byatch
+  - c u n t
+  - c-0-c-k
+  - c-o-c-k
+  - c-u-n-t
+  - c.0.c.k
+  - c.o.c.k.
+  - c.u.n.t
+  - c0ck
+  - c0cks
+  - c0cksucker
+  - c0k
+  - cabron
+  - caca
+  - cacker
+  - cahone
+  - camel jockey
+  - camel jockeys
+  - camel toe
+  - cameljockey
+  - cameltoe
+  - camgirl
+  - camslut
+  - camwhore
+  - carpet muncher
+  - carpetmuncher
+  - carruth
+  - cawk
+  - cawks
+  - cazzo
+  - cervix
+  - chav
+  - cheese eating surrender monkey
+  - cheese eating surrender monkies
+  - cheeseeating surrender monkey
+  - cheeseeating surrender monkies
+  - cheesehead
+  - cheeseheads
+  - cherrypopper
+  - chickslick
+  - china swede
+  - china swedes
+  - chinaman
+  - chinamen
+  - chinaswede
+  - chinaswedes
+  - chinc
+  - chincs
+  - ching chong
+  - ching chongs
+  - chinga
+  - chingchong
+  - chingchongs
+  - chink
+  - chinks
+  - chinky
+  - choad
+  - chocolate rosebuds
+  - chode
+  - chodes
+  - chonkies
+  - chonky
+  - chonkys
+  - chraa
+  - christ killer
+  - christ killers
+  - chug
+  - chugs
+  - chuj
+  - chunger
+  - chungers
+  - chunkies
+  - chunkys
+  - chute
+  - cipa
+  - circlejerk
+  - cl1t
+  - clamdigger
+  - clamdiver
+  - clamps
+  - clansman
+  - clansmen
+  - clanswoman
+  - clanswomen
+  - cleveland steamer
+  - climax
+  - clit
+  - clitface
+  - clitfuck
+  - clitoris
+  - clitorus
+  - clits
+  - clitty
+  - clogwog
+  - clover clamps
+  - clusterfuck
+  - cnts
+  - cntz
+  - cnut
+  - cocain
+  - cocaine
+  - cock
+  - cock-head
+  - cock-sucker
+  - cockbite
+  - cockblock
+  - cockblocker
+  - cockburger
+  - cockcowboy
+  - cockface
+  - cockfight
+  - cockfucker
+  - cockhead
+  - cockholster
+  - cockknob
+  - cockknocker
+  - cocklicker
+  - cocklover
+  - cockmonkey
+  - cockmunch
+  - cockmuncher
+  - cocknob
+  - cocknose
+  - cocknugget
+  - cockqueen
+  - cockrider
+  - cocks
+  - cockshit
+  - cocksman
+  - cocksmith
+  - cocksmoker
+  - cocksucer
+  - cocksuck
+  - cocksucked
+  - cocksucker
+  - cocksucking
+  - cocksucks
+  - cocksuka
+  - cocksukka
+  - cocktease
+  - cocky
+  - cohee
+  - coital
+  - coitus
+  - cok
+  - cokmuncher
+  - coksucka
+  - commie
+  - condom
+  - coochie
+  - coochy
+  - coolie
+  - coolies
+  - cooly
+  - coon ass
+  - coon asses
+  - coon
+  - coonass
+  - coonasses
+  - coondog
+  - coons
+  - cooter
+  - coprolagnia
+  - coprophilia
+  - copulate
+  - corksucker
+  - cornhole
+  - cowgirl
+  - cox
+  - cra5h
+  - crabs
+  - crackcocain
+  - cracker
+  - crackpipe
+  - crackwhore
+  - crap
+  - crapola
+  - crapper
+  - crappy
+  - crash
+  - creampie
+  - crotch
+  - crotchjockey
+  - crotchmonkey
+  - crotchrot
+  - cum
+  - cumbubble
+  - cumdumpster
+  - cum face
+  - cumfest
+  - cumjockey
+  - cum licker
+  - cumlickr
+  - cumm
+  - cummer
+  - cummin
+  - cumming
+  - cumquat
+  - cumqueen
+  - cums
+  - cumshot
+  - cumshots
+  - cumslut
+  - cumstain
+  - cumtart
+  - cumsucker
+  - cunilingus
+  - cunillingus
+  - cunn
+  - cunnie
+  - cunnilingus
+  - cunntt
+  - cunny
+  - cunt
+  - cunteyed
+  - cuntface
+  - cuntfuck
+  - cuntfucker
+  - cunthole
+  - cunthunter
+  - cuntlick
+  - cuntlicker
+  - cuntlicking
+  - cuntrag
+  - cunts
+  - cuntslut
+  - cuntsucker
+  - cuntz
+  - curry muncher
+  - curry munchers
+  - currymuncher
+  - currymunchers
+  - cushi
+  - cushis
+  - cyalis
+  - cyberfuc
+  - cyberfuck
+  - cyberfucked
+  - cyberfucker
+  - cyberfuckers
+  - cyberfucking
+  - cybersex
+  - cyberslimer
+  - d0ng
+  - d0uch3
+  - d0uche
+  - d1ck
+  - d1ld0
+  - d1ldo
+  - d4mn
+  - dago
+  - dagos
+  - dahmer
+  - damm
+  - dammit
+  - damn
+  - damnation
+  - damned
+  - damnit
+  - darkey
+  - darkeys
+  - darkie
+  - darkies
+  - darky
+  - date rape
+  - daterape
+  - datnigga
+  - dawgie style
+  - dawgie-style
+  - daygo
+  - deapthroat
+  - deep throat
+  - deep throating
+  - deepaction
+  - deepthroat
+  - deepthroating
+  - defecate
+  - deggo
+  - dego
+  - degos
+  - demon
+  - dendrophilia
+  - destroyyourpussy
+  - deth
+  - diaperdaddy
+  - diaper daddy
+  - diaper head
+  - diaper heads
+  - diaperhead
+  - diaperheads
+  - dick pic
+  - dick
+  - dick-ish
+  - dickbag
+  - dickbeaters
+  - dickbrain
+  - dickdipper
+  - dickface
+  - dickflipper
+  - dickforbrains
+  - dickfuck
+  - dickhead
+  - dickheads
+  - dickhole
+  - dickish
+  - dickjuice
+  - dickless
+  - dicklick
+  - dicklicker
+  - dickman
+  - dickmilk
+  - dickpic
+  - dickripper
+  - dicks
+  - dicksipper
+  - dickslap
+  - dickslicker
+  - dickwad
+  - dickweasel
+  - dickweed
+  - dickwhipper
+  - dickwod
+  - dickzipper
+  - diddle
+  - dike
+  - dild0
+  - dild0s
+  - dildo
+  - dildos
+  - dilf
+  - diligaf
+  - dilld0
+  - dilld0s
+  - dillweed
+  - dimwit
+  - dingle
+  - dingleberries
+  - dingleberry
+  - dink
+  - dinks
+  - dipship
+  - dipshit
+  - dipstick
+  - dirsa
+  - dirty pillows
+  - dirty sanchez
+  - dix
+  - dixiedike
+  - dixiedyke
+  - dlck
+  - dog style
+  - dog-fucker
+  - doggie style
+  - doggie
+  - doggie-style
+  - doggiestyle
+  - doggin
+  - dogging
+  - doggy style
+  - doggy-style
+  - doggystyle
+  - dolcett
+  - domination
+  - dominatricks
+  - dominatrics
+  - dominatrix
+  - dommes
+  - dong
+  - donkey punch
+  - donkeypunch
+  - donkeyribber
+  - doochbag
+  - doodoo
+  - doofus
+  - dookie
+  - doosh
+  - dot head
+  - dot heads
+  - dothead
+  - dotheads
+  - double dong
+  - double penetration
+  - doubledong
+  - doublepenetration
+  - douch3
+  - douche bag
+  - douche
+  - douche-fag
+  - douchebag
+  - douchebags
+  - douchewaffle
+  - douchey
+  - dp action
+  - dp
+  - dpaction
+  - dragqueen
+  - dragqween
+  - dripdick
+  - drug
+  - dry hump
+  - dryhump
+  - duche
+  - dudette
+  - dumass
+  - dumb ass
+  - dumbass
+  - dumbasses
+  - dumbbitch
+  - dumbfuck
+  - dumbshit
+  - dummy
+  - dumshit
+  - dune coon
+  - dune coons
+  - dupa
+  - dvda
+  - dyefly
+  - dyke
+  - dykes
+  - dziwka
+  - earotics
+  - easyslut
+  - eat my ass
+  - eat my
+  - eatballs
+  - eatme
+  - eatmyass
+  - eatpussy
+  - ecchi
+  - ejackulate
+  - ejaculate
+  - ejaculated
+  - ejaculates
+  - ejaculating
+  - ejaculatings
+  - ejaculation
+  - ejaculations
+  - ejakulate
+  - ekrem
+  - ekto
+  - enculer
+  - enema
+  - enlargement
+  - erect
+  - erection
+  - ero
+  - erotic
+  - erotism
+  - escort
+  - esqua
+  - essohbee
+  - ethical slut
+  - evl
+  - excrement
+  - exkwew
+  - explosion
+  - extacy
+  - extasy
+  - f u c k e r
+  - f u c k e
+  - f u c k
+  - f u k
+  - f*ck
+  - f-u-c-k
+  - f.u.c.k
+  - f4nny
+  - f_u_c_k
+  - facefucker
+  - fack
+  - faeces
+  - faen
+  - fag
+  - fag1t
+  - fagbag
+  - faget
+  - fagfucker
+  - fagg
+  - fagg1t
+  - fagged
+  - fagging
+  - faggit
+  - faggitt
+  - faggot
+  - faggotcock
+  - faggs
+  - fagit
+  - fagot
+  - fagots
+  - fags
+  - fagt
+  - fagtard
+  - fagz
+  - faig
+  - faigs
+  - faigt
+  - fanculo
+  - fannybandit
+  - fannyflaps
+  - fannyfucker
+  - fanyy
+  - fartknocker
+  - farty
+  - fastfuck
+  - fatah
+  - fatass
+  - fatfuck
+  - fatfucker
+  - fatso
+  - fck
+  - fckcum
+  - fckd
+  - fcuk
+  - fcuker
+  - fcuking
+  - fecal
+  - feces
+  - feck
+  - fecker
+  - feg
+  - felatio
+  - felch
+  - felcher
+  - felching
+  - fellate
+  - fellatio
+  - feltch
+  - feltcher
+  - feltching
+  - female squirting
+  - femalesquirtin
+  - femalesquirting
+  - femdom
+  - fetish
+  - ficken
+  - figging
+  - fingerbang
+  - fingerfood
+  - fingerfuck
+  - fingerfucked
+  - fingerfucker
+  - fingerfuckers
+  - fingerfucking
+  - fingerfucks
+  - fingering
+  - fisted
+  - fister
+  - fistfuck
+  - fistfucked
+  - fistfucker
+  - fistfuckers
+  - fistfucking
+  - fistfuckings
+  - fistfucks
+  - fisting
+  - fisty
+  - fitt
+  - flamer
+  - flange
+  - flasher
+  - flikker
+  - flipping the bird
+  - floo
+  - floozy
+  - flydie
+  - flydye
+  - foad
+  - fok
+  - fondle
+  - foobar
+  - fook
+  - fooker
+  - foot fetish
+  - footaction
+  - footfetish
+  - footfuck
+  - footfucker
+  - footjob
+  - footlicker
+  - footstar
+  - foreskin
+  - forni
+  - fornicate
+  - fotze
+  - foursome
+  - fourtwenty
+  - freakfuck
+  - freakyfucker
+  - freefuck
+  - freex
+  - frigg
+  - frigga
+  - frigger
+  - frotting
+  - fubar
+  - fucck
+  - fuck buttons
+  - fuck
+  - fuck-tard
+  - fucka
+  - fuckable
+  - fuckass
+  - fuckbag
+  - fuckbook
+  - fuckboy
+  - fuckbrain
+  - fuckbuddy
+  - fuckbutt
+  - fuckd
+  - fucked
+  - fuckedup
+  - fucker
+  - fuckers
+  - fuckersucker
+  - fuckface
+  - fuckfest
+  - fuckfreak
+  - fuckfriend
+  - fuckhead
+  - fuckheads
+  - fuckher
+  - fuckhole
+  - fuckin
+  - fuckina
+  - fucking
+  - fuckingbitch
+  - fuckings
+  - fuckingshitmotherfucker
+  - fuckinnuts
+  - fuckinright
+  - fuckit
+  - fuckknob
+  - fuckme
+  - fuckmehard
+  - fuckmonkey
+  - fuckn
+  - fucknugget
+  - fucknut
+  - fucknuts
+  - fucknutt
+  - fucknutz
+  - fuckoff
+  - fuckpig
+  - fuckr
+  - fucks
+  - fuckstick
+  - fucktard
+  - fucktards
+  - fuckup
+  - fuckwad
+  - fuckwhit
+  - fuckwhore
+  - fuckwit
+  - fuckwitt
+  - fuckyou
+  - fudge packer
+  - fudgepacker
+  - fugly
+  - fuk
+  - fukah
+  - fuken
+  - fuker
+  - fukin
+  - fuking
+  - fukk
+  - fukkah
+  - fukken
+  - fukker
+  - fukkin
+  - fuks
+  - fuktard
+  - fuktards
+  - fukwhit
+  - fukwit
+  - funeral
+  - funfuck
+  - fungus
+  - futanari
+  - futkretzn
+  - fuuck
+  - fux
+  - fux0r
+  - fvck
+  - fvk
+  - fxck
+  - g-spot
+  - g00k
+  - gae
+  - gai
+  - gang bang
+  - gangbang
+  - gangbanged
+  - gangbanger
+  - gangbangs
+  - gangsta
+  - ganja
+  - gator bait
+  - gatorbait
+  - gay sex
+  - gayboy
+  - gaygirl
+  - gaylord
+  - gaymuthafuckinwhore
+  - gays
+  - gaysex
+  - gayz
+  - geezer
+  - geni
+  - genital
+  - genitals
+  - getiton
+  - gey
+  - gfy
+  - ghay
+  - ghey
+  - giant cock
+  - gigolo
+  - ginzo
+  - ginzos
+  - gipp
+  - gippo
+  - gippos
+  - gipps
+  - girl on top
+  - girl on
+  - girls gone wild
+  - givehead
+  - glans
+  - glazeddonut
+  - goatcx
+  - goatse
+  - gob
+  - god dammit
+  - god damn
+  - god damnit
+  - god-dam
+  - god-damned
+  - godam
+  - godammit
+  - godamn
+  - godamnit
+  - goddam
+  - goddamit
+  - goddamm
+  - goddammit
+  - goddamn
+  - goddamned
+  - goddamnes
+  - goddamnit
+  - goddamnmuthafucker
+  - godsdamn
+  - gokkun
+  - golden shower
+  - goldenshower
+  - golliwog
+  - golliwogs
+  - gonad
+  - gonads
+  - gonorrehea
+  - gonzagas
+  - goo girl
+  - gooch
+  - goodpoop
+  - gook eye
+  - gook eyes
+  - gook
+  - gookeye
+  - gookeyes
+  - gookies
+  - gooks
+  - gooky
+  - gora
+  - goras
+  - goregasm
+  - gotohell
+  - goy
+  - goyim
+  - greaseball
+  - greaseballs
+  - gringo
+  - gringos
+  - groe
+  - groid
+  - groids
+  - grope
+  - gross
+  - grostulation
+  - group sex
+  - gspot
+  - gstring
+  - gtfo
+  - gub
+  - gubba
+  - gubbas
+  - gubs
+  - guido
+  - guiena
+  - guineas
+  - guizi
+  - gummer
+  - guro
+  - gwailo
+  - gwailos
+  - gweilo
+  - gweilos
+  - gyopo
+  - gyopos
+  - gyp
+  - gyped
+  - gypo
+  - gypos
+  - gypp
+  - gypped
+  - gyppie
+  - gyppies
+  - gyppo
+  - gyppos
+  - gyppy
+  - gyppys
+  - gypsys
+  - h e l l
+  - h o m
+  - h00r
+  - h0ar
+  - h0m0
+  - h0mo
+  - h0r
+  - h0re
+  - h4x0r
+  - hadji
+  - hadjis
+  - hairyback
+  - hairybacks
+  - haji
+  - hajis
+  - hajji
+  - hajjis
+  - half breed
+  - half caste
+  - halfbreed
+  - halfcaste
+  - hamas
+  - hand job
+  - handjob
+  - haole
+  - haoles
+  - hapa
+  - hard core
+  - hardcore
+  - hardcoresex
+  - hardon
+  - harem
+  - he11
+  - headfuck
+  - hebe
+  - hebes
+  - heeb
+  - heebs
+  - hell
+  - hells
+  - helvete
+  - henhouse
+  - hentai
+  - heroin
+  - herp
+  - herpes
+  - herpy
+  - heshe
+  - hijacker
+  - hijacking
+  - hillbillies
+  - hillbilly
+  - hindoo
+  - hiscock
+  - hitler
+  - hitlerism
+  - hitlerist
+  - ho
+  - hobag
+  - hodgie
+  - hoe
+  - hoer
+  - hoes
+  - holestuffer
+  - hom0
+  - homey
+  - homicide
+  - homo
+  - homobangers
+  - homodumbshit
+  - homoey
+  - honger
+  - honkers
+  - honkey
+  - honkeys
+  - honkie
+  - honkies
+  - honky
+  - hooch
+  - hooker
+  - hookers
+  - hoor
+  - hoore
+  - hootch
+  - hooter
+  - hooters
+  - hore
+  - hori
+  - horis
+  - hork
+  - horndawg
+  - horndog
+  - horney
+  - horniest
+  - horny
+  - horseshit
+  - hosejob
+  - hoser
+  - hot carl
+  - hot chick
+  - hotcarl
+  - hotdamn
+  - hotpussy
+  - hotsex
+  - hottotrot
+  - how to kill
+  - how to murder
+  - huevon
+  - huge fat
+  - hugefat
+  - hui
+  - hummer
+  - humped
+  - humper
+  - humpher
+  - humphim
+  - humpin
+  - humping
+  - husky
+  - hussy
+  - hustler
+  - hymen
+  - hymie
+  - hymies
+  - iblowu
+  - ike
+  - ikes
+  - ikey
+  - ikeymo
+  - ikeymos
+  - ikwe
+  - illegal
+  - illegals
+  - inbred
+  - incest
+  - indon
+  - indons
+  - injun
+  - injuns
+  - insest
+  - intercourse
+  - interracial
+  - intheass
+  - inthebuff
+  - israels
+  - j3rk0ff
+  - jack off
+  - jack-off
+  - jackass
+  - jackhole
+  - jackoff
+  - jackshit
+  - jacktheripper
+  - jail bait
+  - jailbait
+  - jap
+  - japcrap
+  - japie
+  - japies
+  - japs
+  - jebus
+  - jelly donut
+  - jerk off
+  - jerk
+  - jerk-off
+  - jerk0ff
+  - jerked
+  - jerkoff
+  - jerries
+  - jerry
+  - jesuschrist
+  - jewed
+  - jewess
+  - jig
+  - jiga
+  - jigaboo
+  - jigaboos
+  - jigarooni
+  - jigaroonis
+  - jigg
+  - jigga
+  - jiggabo
+  - jiggaboo
+  - jiggabos
+  - jiggas
+  - jigger
+  - jiggerboo
+  - jiggers
+  - jiggs
+  - jiggy
+  - jigs
+  - jihad
+  - jijjiboo
+  - jijjiboos
+  - jimfish
+  - jisim
+  - jism
+  - jiss
+  - jiz
+  - jizim
+  - jizin
+  - jizjuice
+  - jizm
+  - jizn
+  - jizz
+  - jizzd
+  - jizzed
+  - jizzim
+  - jizzin
+  - jizzn
+  - jizzum
+  - jugg
+  - juggs
+  - jugs
+  - jungle bunnies
+  - jungle bunny
+  - junglebunny
+  - junkie
+  - junky
+  - kacap
+  - kacapas
+  - kacaps
+  - kaffer
+  - kaffir
+  - kaffre
+  - kafir
+  - kanake
+  - kanker
+  - katsap
+  - katsaps
+  - kawk
+  - khokhol
+  - khokhols
+  - kicking
+  - kigger
+  - kike
+  - kikes
+  - killer
+  - kills
+  - kimchis
+  - kinbaku
+  - kink
+  - kinkster
+  - kinky
+  - kissass
+  - kkk
+  - klan
+  - klansman
+  - klansmen
+  - klanswoman
+  - klanswomen
+  - klootzak
+  - knobbing
+  - knobead
+  - knobed
+  - knobend
+  - knobhead
+  - knobjocky
+  - knobjokey
+  - knobz
+  - knockers
+  - knulle
+  - kock
+  - kondum
+  - kondums
+  - kooch
+  - kooches
+  - koon
+  - kootch
+  - krap
+  - krappy
+  - kraut
+  - krauts
+  - kuffar
+  - kuk
+  - kuksuger
+  - kum
+  - kumbubble
+  - kumbullbe
+  - kumer
+  - kummer
+  - kumming
+  - kumquat
+  - kums
+  - kunilingus
+  - kunnilingus
+  - kunt
+  - kunts
+  - kuntz
+  - kurac
+  - kurwa
+  - kushi
+  - kushis
+  - kusi
+  - kwa
+  - kwai lo
+  - kwai los
+  - ky
+  - kyke
+  - kykes
+  - kyopo
+  - kyopos
+  - kyrpa
+  - l3i+ch
+  - l3i\+ch
+  - l3itch
+  - labia
+  - lapdance
+  - lds
+  - leather restraint
+  - leather straight jacket
+  - leather straight
+  - leatherrestraint
+  - lebo
+  - lebos
+  - lech
+  - lemon party
+  - lemonparty
+  - leper
+  - lesbain
+  - lesbayn
+  - lesbian
+  - lesbin
+  - lesbo
+  - lez
+  - lezbe
+  - lezbefriends
+  - lezbian
+  - lezbians
+  - lezbo
+  - lezbos
+  - lezz
+  - lezzian
+  - lezzie
+  - lezzies
+  - lezzo
+  - lezzy
+  - libido
+  - licker
+  - licking
+  - lickme
+  - lilniglet
+  - limey
+  - limpdick
+  - limy
+  - lingerie
+  - lipshits
+  - lipshitz
+  - livesex
+  - lmfao
+  - loadedgun
+  - loin
+  - loins
+  - lolita
+  - lovebone
+  - lovegoo
+  - lovegun
+  - lovejuice
+  - lovemaking
+  - lovemuscle
+  - lovepistol
+  - loverocket
+  - lowlife
+  - lsd
+  - lubejob
+  - lubra
+  - lucifer
+  - luckycammeltoe
+  - lugan
+  - lugans
+  - lust
+  - lusting
+  - lusty
+  - lynch
+  - m-fucking
+  - m0f0
+  - m0fo
+  - m45terbate
+  - ma5terb8
+  - ma5terbate
+  - mabuno
+  - mabunos
+  - macaca
+  - macacas
+  - magicwand
+  - mahbuno
+  - mahbunos
+  - make me come
+  - makemecome
+  - makemecum
+  - male squirting
+  - mamhoon
+  - mams
+  - manhater
+  - manpaste
+  - maricon
+  - "maric\xF3n"
+  - marijuana
+  - masochist
+  - masokist
+  - massa
+  - massterbait
+  - masstrbait
+  - masstrbate
+  - mastabate
+  - mastabater
+  - master-bate
+  - masterb8
+  - masterbaiter
+  - masterbat
+  - masterbat3
+  - masterbate
+  - masterbates
+  - masterbating
+  - masterbation
+  - masterbations
+  - masterblaster
+  - mastrabator
+  - masturbat
+  - masturbate
+  - masturbating
+  - masturbation
+  - mattressprincess
+  - mau mau
+  - mau maus
+  - maumau
+  - maumaus
+  - mcfagget
+  - meatbeatter
+  - meatrack
+  - menage a trois
+  - menage
+  - menses
+  - menstruate
+  - menstruation
+  - merd
+  - meth
+  - mgger
+  - mggor
+  - mibun
+  - mick
+  - mickeyfinn
+  - mideast
+  - mierda
+  - milf
+  - minge
+  - minger
+  - missionary position
+  - missionary
+  - mo-fo
+  - mockey
+  - mockie
+  - mocky
+  - mof0
+  - mofo
+  - moky
+  - molest
+  - molestation
+  - molester
+  - molestor
+  - moneyshot
+  - monkleigh
+  - moolie
+  - moon cricket
+  - moon crickets
+  - mooncricket
+  - mooncrickets
+  - mormon
+  - moron
+  - moskal
+  - moskals
+  - moslem
+  - mosshead
+  - motha fucker
+  - motha fuker
+  - motha fukkah
+  - motha fukker
+  - mothafuck
+  - mothafucka
+  - mothafuckas
+  - mothafuckaz
+  - mothafucked
+  - mothafucker
+  - mothafuckers
+  - mothafuckin
+  - mothafucking
+  - mothafuckings
+  - mothafucks
+  - mother fucker
+  - mother fukah
+  - mother fuker
+  - mother fukkah
+  - mother fukker
+  - mother-fucker
+  - motherfuck
+  - motherfucka
+  - motherfucked
+  - motherfucker
+  - motherfuckers
+  - motherfuckin
+  - motherfucking
+  - motherfuckings
+  - motherfuckka
+  - motherfucks
+  - motherfvcker
+  - motherlovebone
+  - mothrfucker
+  - mouliewop
+  - mound of venus
+  - moundofvenus
+  - mr hands
+  - mrhands
+  - mtherfucker
+  - mthrfuck
+  - mthrfucker
+  - mthrfucking
+  - mtrfck
+  - mtrfuck
+  - mtrfucker
+  - muff diver
+  - muff
+  - muffdive
+  - muffdiver
+  - muffdiving
+  - muffindiver
+  - mufflikcer
+  - muie
+  - mulatto
+  - mulkku
+  - muncher
+  - mung
+  - munging
+  - munt
+  - munter
+  - murder
+  - murderer
+  - muschi
+  - mutha fucker
+  - mutha fukah
+  - mutha fuker
+  - mutha fukkah
+  - mutha fukker
+  - mutha
+  - muthafecker
+  - muthafuckaz
+  - muthafucker
+  - muthafuckker
+  - muther
+  - mutherfucker
+  - mutherfucking
+  - muthrfucking
+  - mzungu
+  - mzungus
+  - n1gga
+  - n1gger
+  - n1gr
+  - nad
+  - nads
+  - naked
+  - nambla
+  - nastt
+  - nasty
+  - nastybitch
+  - nastyho
+  - nastyslut
+  - nastywhore
+  - nawashi
+  - nazi
+  - nazis
+  - nazism
+  - necked
+  - necro
+  - negres
+  - negress
+  - negro
+  - negroes
+  - negroid
+  - negros
+  - neonazi
+  - nepesaurio
+  - nig nog
+  - nig
+  - niga
+  - nigar
+  - nigars
+  - nigas
+  - niger
+  - nigerian
+  - nigerians
+  - nigers
+  - nigette
+  - nigettes
+  - nigg
+  - nigg3r
+  - nigg4h
+  - nigga
+  - niggah
+  - niggahs
+  - niggar
+  - niggaracci
+  - niggard
+  - niggarded
+  - niggarding
+  - niggardliness
+  - niggardlinesss
+  - niggardly
+  - niggards
+  - niggars
+  - niggas
+  - niggaz
+  - nigger
+  - niggerhead
+  - niggerhole
+  - niggers
+  - niggle
+  - niggled
+  - niggles
+  - niggling
+  - nigglings
+  - niggor
+  - niggress
+  - niggresses
+  - nigguh
+  - nigguhs
+  - niggur
+  - niggurs
+  - niglet
+  - nignog
+  - nigor
+  - nigors
+  - nigr
+  - nigra
+  - nigras
+  - nigre
+  - nigres
+  - nigress
+  - nigs
+  - nigur
+  - niiger
+  - niigr
+  - nimphomania
+  - nimrod
+  - ninny
+  - nip
+  - nipple
+  - nipplering
+  - nipples
+  - nips
+  - nittit
+  - nlgger
+  - nlggor
+  - nob jokey
+  - nob
+  - nobhead
+  - nobjocky
+  - nobjokey
+  - nofuckingway
+  - nog
+  - nookey
+  - nookie
+  - nooky
+  - noonan
+  - nooner
+  - nsfw images
+  - nsfw
+  - nude
+  - nudger
+  - nudie
+  - nudies
+  - nudity
+  - numbnuts
+  - nut sack
+  - nutfucker
+  - nutsack
+  - nymph
+  - nympho
+  - nymphomania
+  - o c k
+  - octopussy
+  - omorashi
+  - one cup two girls
+  - one guy one jar
+  - one guy
+  - one jar
+  - ontherag
+  - orafis
+  - oral
+  - orally
+  - orga
+  - orgasim
+  - orgasim;
+  - orgasims
+  - orgasm
+  - orgasmic
+  - orgasms
+  - orgasum
+  - orgies
+  - orgy
+  - oriface
+  - orifice
+  - orifiss
+  - orospu
+  - osama
+  - ovum
+  - ovums
+  - p e n i s
+  - p i s
+  - p u s s y
+  - p.u.s.s.y.
+  - p0rn
+  - packi
+  - packie
+  - packy
+  - paddy
+  - paedophile
+  - paki
+  - pakie
+  - pakis
+  - paky
+  - palesimian
+  - pancake face
+  - pancake faces
+  - panooch
+  - pansies
+  - pansy
+  - panti
+  - pantie
+  - panties
+  - panty
+  - paska
+  - pastie
+  - pasty
+  - payo
+  - pcp
+  - pearlnecklace
+  - peck
+  - pecker
+  - peckerhead
+  - peckerwood
+  - pedo
+  - pedobear
+  - pedophile
+  - pedophilia
+  - pedophiliac
+  - peeenus
+  - peeenusss
+  - peehole
+  - peenus
+  - peepee
+  - peepshow
+  - peepshpw
+  - pegging
+  - peinus
+  - pen1s
+  - penas
+  - pendejo
+  - pendy
+  - penetrate
+  - penetration
+  - peni5
+  - penial
+  - penile
+  - penis
+  - penis-breath
+  - penises
+  - penisfucker
+  - penisland
+  - penislick
+  - penislicker
+  - penispuffer
+  - penthouse
+  - penus
+  - penuus
+  - perse
+  - perv
+  - perversion
+  - peyote
+  - phalli
+  - phallic
+  - phone sex
+  - phonesex
+  - phuc
+  - phuck
+  - phuk
+  - phuked
+  - phuker
+  - phuking
+  - phukked
+  - phukker
+  - phukking
+  - phuks
+  - phungky
+  - phuq
+  - pi55
+  - picaninny
+  - piccaninny
+  - picka
+  - pickaninnies
+  - pickaninny
+  - piece of shit
+  - pieceofshit
+  - piefke
+  - piefkes
+  - pierdol
+  - pigfucker
+  - piker
+  - pikey
+  - piky
+  - pillowbiter
+  - pillu
+  - pimmel
+  - pimp
+  - pimped
+  - pimper
+  - pimpis
+  - pimpjuic
+  - pimpjuice
+  - pimpsimp
+  - pindick
+  - pinko
+  - pis
+  - pises
+  - pisin
+  - pising
+  - pisof
+  - piss pig
+  - piss
+  - piss-off
+  - pissed
+  - pisser
+  - pissers
+  - pisses
+  - pissflaps
+  - pisshead
+  - pissin
+  - pissing
+  - pissoff
+  - pisspig
+  - pistol
+  - pizda
+  - playboy
+  - playgirl
+  - pleasure chest
+  - pleasurechest
+  - pms
+  - pocha
+  - pochas
+  - pocho
+  - pochos
+  - pocketpool
+  - pohm
+  - pohms
+  - polac
+  - polack
+  - polacks
+  - polak
+  - pole smoker
+  - polesmoker
+  - pollock
+  - pollocks
+  - pommie grant
+  - pommie grants
+  - pommie
+  - pommies
+  - pommy
+  - ponyplay
+  - poof
+  - poon
+  - poonani
+  - poonany
+  - poontang
+  - poontsee
+  - poop chute
+  - poopchute
+  - pooper
+  - pooperscooper
+  - pooping
+  - poorwhitetrash
+  - popimp
+  - porch monkey
+  - porch monkies
+  - porchmonkey
+  - porn
+  - pornflick
+  - pornking
+  - porno
+  - pornography
+  - pornos
+  - pornprincess
+  - pound town
+  - poundtown
+  - pplicker
+  - pr0n
+  - pr1c
+  - pr1ck
+  - pr1k
+  - prairie nigger
+  - prairie niggers
+  - premature
+  - preteen
+  - pric
+  - prick
+  - prickhead
+  - pricks
+  - prig
+  - prince albert piercing
+  - pron
+  - propaganda
+  - prostitute
+  - pthc
+  - pu55i
+  - pu55y
+  - pube
+  - pubes
+  - pubic
+  - pubiclice
+  - pubis
+  - pud
+  - pudboy
+  - pudd
+  - puddboy
+  - puke
+  - pula
+  - pule
+  - punani
+  - punanny
+  - punany
+  - punkass
+  - punky
+  - punta
+  - puntang
+  - purinapricness
+  - pusies
+  - puss
+  - pusse
+  - pussee
+  - pussi
+  - pussie
+  - pussies
+  - pussy
+  - pussycat
+  - pussydestroyer
+  - pussyeater
+  - pussyfucker
+  - pussylicker
+  - pussylicking
+  - pussylips
+  - pussylover
+  - pussypounder
+  - pussys
+  - pusy
+  - puta
+  - puto
+  - puuke
+  - puuker
+  - qahbeh
+  - quashie
+  - queaf
+  - queef
+  - queero
+  - queers
+  - queerz
+  - quickie
+  - quicky
+  - quiff
+  - quim
+  - qweers
+  - qweerz
+  - qweir
+  - r-tard
+  - r-tards
+  - r5e
+  - ra8s
+  - racial
+  - radicals
+  - raghead
+  - ragheads
+  - raging boner
+  - raging
+  - ragingboner
+  - randy
+  - rape
+  - raped
+  - raper
+  - raping
+  - rapist
+  - raunch
+  - rautenberg
+  - rearend
+  - rearentry
+  - recktum
+  - rectal
+  - rectum
+  - rectus
+  - redleg
+  - redlegs
+  - redlight
+  - redneck
+  - rednecks
+  - redskin
+  - redskins
+  - reefer
+  - reestie
+  - reetard
+  - refugee
+  - reich
+  - renob
+  - rentafuck
+  - rere
+  - retard
+  - retarded
+  - retards
+  - retardz
+  - reverse cowgirl
+  - reversecowgirl
+  - rigger
+  - rimjaw
+  - rimjob
+  - rimming
+  - ritard
+  - rosebuds
+  - rosy palm and her 5 sisters
+  - rosy palm
+  - rosypalm
+  - rosypalmandher5sisters
+  - rosypalmandherefivesisters
+  - round eyes
+  - roundeye
+  - rtard
+  - rtards
+  - rump
+  - rumprammer
+  - ruski
+  - russki
+  - russkie
+  - rusty trombone
+  - rustytrombone
+  - s h i t
+  - s hit
+  - s&m
+  - s-h-1-t
+  - s-h-i-t
+  - s-o-b
+  - s.h.i.t.
+  - s.o.b.
+  - s0b
+  - s_h_i_t
+  - sac
+  - sadis
+  - sadism
+  - sadist
+  - sadom
+  - sambo
+  - sambos
+  - samckdaddy
+  - sanchez
+  - sand nigger
+  - sand niggers
+  - sandm
+  - sandnigger
+  - santorum
+  - scag
+  - scallywag
+  - scank
+  - scantily
+  - scat
+  - schaffer
+  - scheiss
+  - schizo
+  - schlampe
+  - schlong
+  - schmuck
+  - schvartse
+  - schvartsen
+  - schwartze
+  - schwartzen
+  - scissoring
+  - screwed
+  - screwing
+  - screwyou
+  - scroat
+  - scrog
+  - scrot
+  - scrote
+  - scrotum
+  - scrud
+  - seduce
+  - semen
+  - seppo
+  - seppos
+  - septics
+  - sex
+  - sexed
+  - sexfarm
+  - sexhound
+  - sexhouse
+  - sexi
+  - sexing
+  - sexkitten
+  - sexo
+  - sexpot
+  - sexslave
+  - sextogo
+  - sextoy
+  - sextoys
+  - sexual
+  - sexually
+  - sexwhore
+  - sexx
+  - sexxi
+  - sexxx
+  - sexxxi
+  - sexxxy
+  - sexxy
+  - sexy
+  - sexymoma
+  - sexyslim
+  - sh!+
+  - sh!t
+  - sh1t
+  - sh1ter
+  - sh1ts
+  - sh1tter
+  - sh1tz
+  - shag
+  - shagger
+  - shaggin
+  - shagging
+  - shamedame
+  - sharmuta
+  - sharmute
+  - shat
+  - shav
+  - shaved beaver
+  - shaved pussy
+  - shaved
+  - shavedbeaver
+  - shavedpussy
+  - shawtypimp
+  - sheeney
+  - shemale
+  - shhit
+  - shi+
+  - shibari
+  - shinola
+  - shipal
+  - shit ass
+  - shit
+  - shitass
+  - shitbag
+  - shitbagger
+  - shitblimp
+  - shitbrain
+  - shitbreath
+  - shitcan
+  - shitcunt
+  - shitdick
+  - shite
+  - shiteater
+  - shited
+  - shitey
+  - shitface
+  - shitfaced
+  - shitfit
+  - shitforbrains
+  - shitfuck
+  - shitfucker
+  - shitfull
+  - shithapens
+  - shithappens
+  - shithead
+  - shithole
+  - shithouse
+  - shiting
+  - shitings
+  - shitlist
+  - shitola
+  - shitoutofluck
+  - shits
+  - shitspitter
+  - shitstain
+  - shitt
+  - shitted
+  - shitter
+  - shitters
+  - shittiest
+  - shitting
+  - shittings
+  - shitty
+  - shity
+  - shitz
+  - shiz
+  - shiznit
+  - shortfuck
+  - shota
+  - shrimping
+  - shylock
+  - shylocks
+  - shyt
+  - shyte
+  - shytty
+  - shyty
+  - sissy
+  - sixsixsix
+  - sixtynine
+  - sixtyniner
+  - skag
+  - skanck
+  - skank
+  - skankbitch
+  - skankee
+  - skankey
+  - skankfuck
+  - skanks
+  - skankwhore
+  - skanky
+  - skankybitch
+  - skankywhore
+  - skeet
+  - skinflute
+  - skribz
+  - skullfuck
+  - skum
+  - skumbag
+  - skurwysyn
+  - skwa
+  - skwe
+  - slag
+  - slant
+  - slanteye
+  - slanty
+  - slapper
+  - slaughter
+  - slave
+  - slavedriver
+  - sleaze
+  - sleazy
+  - sleezebag
+  - sleezeball
+  - slideitin
+  - slimeball
+  - slimebucket
+  - slopehead
+  - slopeheads
+  - sloper
+  - slopers
+  - slopes
+  - slopey
+  - slopeys
+  - slopies
+  - slopy
+  - slut
+  - slutbag
+  - slutdumper
+  - slutkiss
+  - sluts
+  - slutt
+  - slutting
+  - slutty
+  - slutwear
+  - slutwhore
+  - slutz
+  - smack
+  - smackthemonkey
+  - smeg
+  - smegma
+  - smoker
+  - smut
+  - smutty
+  - snatch
+  - snatchpatch
+  - snigger
+  - sniggered
+  - sniggering
+  - sniggers
+  - sniper
+  - snowback
+  - snowballing
+  - snownigger
+  - snuff
+  - sob
+  - socksucker
+  - sodom
+  - sodomise
+  - sodomite
+  - sodomize
+  - sodomy
+  - son of a bitch
+  - son of a whore
+  - son-of-a-bitch
+  - son-of-a-whore
+  - sonofabitch
+  - sonofbitch
+  - sooties
+  - sooty
+  - souse
+  - soused
+  - spac
+  - spade
+  - spades
+  - spaghettibender
+  - spaghettinigger
+  - spank
+  - spankthemonkey
+  - spearchucker
+  - spearchuckers
+  - sperm
+  - spermacide
+  - spermbag
+  - spermhearder
+  - spermherder
+  - sphencter
+  - spic
+  - spick
+  - spicks
+  - spics
+  - spierdalaj
+  - spig
+  - spigotty
+  - spik
+  - spiks
+  - spitter
+  - splittail
+  - splooge moose
+  - splooge
+  - spludge
+  - spooge
+  - spread legs
+  - spreadeagle
+  - spunk
+  - spunky
+  - sqeh
+  - squa
+  - squarehead
+  - squareheads
+  - squaw
+  - squinty
+  - squirting
+  - stagg
+  - steamy
+  - stfu
+  - stiffy
+  - stoned
+  - stoner
+  - strap on
+  - strapon
+  - strappado
+  - stringer
+  - strip club
+  - stripclub
+  - stroke
+  - stroking
+  - stuinties
+  - stupid
+  - stupidfuck
+  - stupidfucker
+  - style doggy
+  - suck
+  - suckdick
+  - sucked
+  - sucker
+  - sucking
+  - suckme
+  - suckmyass
+  - suckmydick
+  - suckmytit
+  - suckoff
+  - sucks
+  - suicide girl
+  - suicide girls
+  - suicide
+  - suicidegirl
+  - suicidegirls
+  - suka
+  - sultry women
+  - sultry
+  - sultrywoman
+  - sultrywomen
+  - sumofabiatch
+  - swallow
+  - swallower
+  - swalow
+  - swamp guinea
+  - swamp guineas
+  - swastika
+  - swinger
+  - syphilis
+  - t i t
+  - t i ts
+  - t1t
+  - t1tt1e5
+  - t1tties
+  - taboo
+  - tacohead
+  - tacoheads
+  - taff
+  - tainted love
+  - tainted
+  - take off your
+  - tantra
+  - tar babies
+  - tar baby
+  - tarbaby
+  - tard
+  - taste my
+  - tastemy
+  - tawdry
+  - tea bagging
+  - teabagging
+  - teat
+  - teets
+  - teez
+  - terd
+  - terror
+  - terrorist
+  - teste
+  - testee
+  - testes
+  - testical
+  - testicle
+  - testicles
+  - testis
+  - thicklip
+  - thicklips
+  - thirdeye
+  - thirdleg
+  - threesome
+  - threeway
+  - throat
+  - throating
+  - thrust
+  - thug
+  - thundercunt
+  - ti
+  - tied up
+  - tig ol bitties
+  - tig old bitties
+  - tight white
+  - timber nigger
+  - timber niggers
+  - timbernigger
+  - tinkle
+  - tit
+  - titbitnipply
+  - titfuck
+  - titfucker
+  - titfuckin
+  - titi
+  - titjob
+  - titlicker
+  - titlover
+  - tits
+  - titt
+  - tittie
+  - tittie5
+  - tittiefucker
+  - titties
+  - tittis
+  - titty
+  - tittyfuck
+  - tittyfucker
+  - tittys
+  - tittywank
+  - titwank
+  - tity
+  - to murder
+  - toke
+  - tongethruster
+  - tongue in a
+  - tongueina
+  - tonguethrust
+  - tonguetramp
+  - toots
+  - topless
+  - tortur
+  - torture
+  - tosser
+  - towel head
+  - towel heads
+  - towelhead
+  - trailertrash
+  - tramp
+  - trannie
+  - tranny
+  - transsexual
+  - transvestite
+  - trashy
+  - tribadism
+  - triplex
+  - trisexual
+  - trois
+  - trojan
+  - trombone
+  - trots
+  - tub girl
+  - tubgirl
+  - tuckahoe
+  - tunneloflove
+  - turd
+  - turd burgler
+  - turnon
+  - tush
+  - tushy
+  - tw4t
+  - twat
+  - twathead
+  - twatlips
+  - twats
+  - twatty
+  - twatwaffle
+  - twink
+  - twinkie
+  - two girls one cup
+  - twobitwhore
+  - twunt
+  - twunter
+  - udge packer
+  - ukrop
+  - uncle tom
+  - unclefucker
+  - undies
+  - undressing
+  - unfuckable
+  - unwed
+  - upskirt
+  - uptheass
+  - upthebutt
+  - urethra play
+  - urethra
+  - urethraplay
+  - urophilia
+  - usama
+  - ussys
+  - uzi
+  - v a g i n a
+  - v14gra
+  - v1gra
+  - v4gra
+  - va-j-j
+  - va1jina
+  - vag
+  - vag1na
+  - vagiina
+  - vagina
+  - vaginal
+  - vaj1na
+  - vajina
+  - valium
+  - venus mound
+  - vgra
+  - viagra
+  - vibe
+  - vibr
+  - vibrater
+  - vibrator
+  - vietcong
+  - violet wand
+  - virgin
+  - virginbreaker
+  - vittu
+  - vixen
+  - vjayjay
+  - vodka
+  - vomit
+  - vorarephilia
+  - voyeur
+  - vulgar
+  - vullva
+  - vulva
+  - w00se
+  - w0p
+  - wab
+  - wad
+  - wang
+  - wank
+  - wanker
+  - wanking
+  - wanky
+  - waysted
+  - wazoo
+  - wedgie
+  - weed
+  - weenie
+  - weewee
+  - weiner
+  - weirdo
+  - welcher
+  - wench
+  - wet dream
+  - wetb
+  - wetback
+  - wetbacks
+  - wetdream
+  - wetspot
+  - wh00r
+  - wh0re
+  - wh0reface
+  - whacker
+  - whash
+  - whigger
+  - whiggers
+  - whiskeydick
+  - whiskydick
+  - whit
+  - white power
+  - white trash
+  - whitenigger
+  - whitepower
+  - whites
+  - whitetrash
+  - whitey
+  - whiteys
+  - whities
+  - whiz
+  - whoar
+  - whop
+  - whoralicious
+  - whore
+  - whorealicious
+  - whorebag
+  - whored
+  - whoreface
+  - whorefucker
+  - whorehopper
+  - whorehouse
+  - whores
+  - whoring
+  - wichser
+  - wigga
+  - wiggas
+  - wigger
+  - wiggers
+  - willie
+  - willies
+  - williewanker
+  - willy
+  - wn
+  - wog
+  - wogs
+  - woody
+  - wop
+  - wrapping men
+  - wrinkled starfish
+  - wtf
+  - wuss
+  - wuzzie
+  - x-rated
+  - xkwe
+  - xrated
+  - xtc
+  - xx
+  - xxx
+  - xxxxxx
+  - yank
+  - yaoi
+  - yarpie
+  - yarpies
+  - yeasty
+  - yed
+  - yellow showers
+  - yellowman
+  - yellowshowers
+  - yid
+  - yids
+  - yiffy
+  - yobbo
+  - yourboobs
+  - yourpenis
+  - yourtits
+  - zabourah
+  - zigabo
+  - zigabos
+  - zipperhead
+  - zipperheads
+  - zoophile
+  - zoophilia
+--- !u!1 &1504233590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504233593}
+  - component: {fileID: 1504233592}
+  - component: {fileID: 1504233591}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1504233591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504233590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1504233592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504233590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1504233593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504233590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1591257552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1591257553}
+  - component: {fileID: 1591257555}
+  - component: {fileID: 1591257554}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1591257553
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591257552}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0365086, y: 0.7538244, z: 0.7538244}
+  m_Children: []
+  m_Father: {fileID: 130404964}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.80000305, y: -0.32246}
+  m_SizeDelta: {x: 0.72, y: 10.444}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1591257554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591257552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1591257555
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591257552}
+  m_CullTransparentMesh: 1
+--- !u!1 &1783672748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1783672749}
+  - component: {fileID: 1783672751}
+  - component: {fileID: 1783672750}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1783672749
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783672748}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.22751121, y: 0.22751121, z: 0.22751121}
+  m_Children: []
+  m_Father: {fileID: 992646992}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0009536743, y: 0.00063323975}
+  m_SizeDelta: {x: 691.8, y: 166.24}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1783672750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783672748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
+    m_FontSize: 175
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: Quit
+--- !u!222 &1783672751
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783672748}
+  m_CullTransparentMesh: 1
+--- !u!1 &1994851259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1994851260}
+  - component: {fileID: 1994851262}
+  - component: {fileID: 1994851261}
+  m_Layer: 5
+  m_Name: BetaText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1994851260
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994851259}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.0032689415, y: 0.0032689415, z: 0.0032689415}
+  m_Children: []
+  m_Father: {fileID: 495079662}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -1362.63, y: -390.29}
+  m_SizeDelta: {x: 292.0726, y: 100.9024}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1994851261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994851259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.019607844, g: 0.019607844, b: 0.023529414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
+    m_FontSize: 125
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: BETA
+--- !u!222 &1994851262
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994851259}
+  m_CullTransparentMesh: 1
