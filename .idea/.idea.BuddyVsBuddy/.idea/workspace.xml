@@ -11,7 +11,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/RespawnManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProjectileMeteor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../gamebuddycraft/Assets/Photon/PhotonUnityNetworking/Code/PhotonNetworkPart.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -27,7 +26,6 @@
       <option value="$PROJECT_DIR$/Assets/ScoringSystemManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DestroyObjectRPC.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Incinerate.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LobbyManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Meteor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/FireLaser.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CoinManager.cs" />
@@ -48,6 +46,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/TalentTreeUnlock.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/PlayerResources.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LobbyManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="20HILGHEyPfgFbE5CpIJDMqelCb" />
@@ -111,7 +110,7 @@
       <workItem from="1635963031918" duration="4939000" />
       <workItem from="1635968524457" duration="11343000" />
       <workItem from="1636010283280" duration="9140000" />
-      <workItem from="1636045394679" duration="4489000" />
+      <workItem from="1636045394679" duration="6538000" />
     </task>
     <servers />
   </component>

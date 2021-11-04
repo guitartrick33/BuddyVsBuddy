@@ -89,6 +89,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         UpdatePlayerList();
     }
 
+    
+
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
         if(Time.time >= nextUpdateTime)
@@ -125,6 +127,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.JoinRandomRoom();
     }
+    
 
     /* Check for errors */
     public override void OnJoinRandomFailed(short returnCode, string message)
@@ -135,6 +138,13 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
+    {
+        errorText.text = message;
+        roomInputField.text = "";
+        StartCoroutine(WaitErrorText());
+    }
+    
+    public override void OnCreateRoomFailed(short returnCode, string message)
     {
         errorText.text = message;
         roomInputField.text = "";

@@ -24473,7 +24473,7 @@ MonoBehaviour:
   destructionTimer: 5
   damage: 35
   photonView: {fileID: -3219233968952044513}
-  blastRadius: 8
+  blastRadius: 6
 --- !u!1 &1915593564425164
 GameObject:
   m_ObjectHideFlags: 0
