@@ -43,6 +43,7 @@ public class PlayerSpawner : MonoBehaviourPun
             if (!PhotonView.Get(player).IsMine)
             {
                 player.tag = "Enemy";
+                player.layer = 8;
             }
         }
     }

@@ -43,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
         extraJumps = extraJumpValue;
         rb = GetComponent<Rigidbody2D>();
         nickName.text = photonView.Owner.NickName;
-        fd = gameObject.GetComponent<FallDamage>();
         isOnRope = false;
     }
 
@@ -137,7 +136,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.tag == "Rope")
         {
-            fd.startYPos = gameObject.transform.position.y;
             isOnRope = false;
         }
     }
@@ -146,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.tag == "Rope")
         {
-            rb.velocity = new Vector2(rb.velocity.x, ropeInput * (speed / 2.5f));
+            rb.velocity = new Vector2(rb.velocity.x, ropeInput * (speed / 1.5f));
         }
     }
 }

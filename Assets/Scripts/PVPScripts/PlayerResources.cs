@@ -20,16 +20,26 @@ public class PlayerResources : MonoBehaviour
 
     private PhotonView photonView;
     
-    private float healthPercentage;
+    public float healthPercentage;
     
     public HealthBar healthBar;
-    public Text onCollision;
     
     private PlayerMovement pm;
 
+    public int killsToWin= 5;
+
     public bool isWinner;
+    private GameObject gameManager;
+
+    public float coinRespawnTime = 5f;
+    public float potionHealAmount = 50f; 
+
+    private GameObject lastPersonToHitMe;
+    [SerializeField] private GameObject onCoinCollectImage;
     void Start()
     {
+        onCoinCollectImage.SetActive(false);
+        gameManager = GameObject.Find("GameManager");
         currentHealth = maxHealth;
         currentTalentPoints = 16;
         photonView = gameObject.GetComponent<PhotonView>();
@@ -39,41 +49,36 @@ public class PlayerResources : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    void Update()
+    private void Update()
     {
-        healthPercentage = Mathf.RoundToInt(currentHealth / maxHealth * 100);
-        
-
-    }
-
-    public void TakeDamage(float amount)
-    {
-        currentHealth -= amount;
-        healthPercentage = Mathf.RoundToInt(currentHealth / maxHealth * 100);
         if (currentHealth <= 0)
         {
-            currentHealth = maxHealth;
-            gameObject.transform.position = pm.startPos;
+            photonView.RPC("ResetPosRPC", RpcTarget.All, null);
+            lastPersonToHitMe.GetComponent<PlayerResources>().SubtractScore();
         }
+    }
+
+    public void TakeDamage(int id, float amount)
+    {
+        photonView.RPC("TakeDamageRPC", RpcTarget.All, amount);
+        lastPersonToHitMe = PhotonView.Find(id).gameObject;
+    }
+
+    [PunRPC]
+    void TakeDamageRPC(float amount)
+    {
+        currentHealth -= amount;
         healthBar.SetHealthRPC(currentHealth);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (photonView.IsMine)
-        {
-            if (other.gameObject.tag == "Crown")
-            {
-                isWinner = true;
-                photonView.RPC("LoadLastScene", RpcTarget.All, null);
-            }
 
-            if (other.gameObject.tag == "Coin")
-            {
-                onCollision.text = "+1 Talent Point!";
-                StartCoroutine(WaitForSeconds());
-            }
-        }
+    [PunRPC]
+    public void ResetPosRPC()
+    {
+        currentHealth = maxHealth;
+        gameObject.transform.position = pm.startPos;
+        currentTalentPoints++;
+        healthBar.SetHealthRPC(currentHealth);
     }
 
     [PunRPC]
@@ -86,7 +91,99 @@ public class PlayerResources : MonoBehaviour
     IEnumerator WaitForSeconds()
     {
         yield return new WaitForSeconds(2);
-        onCollision.text = string.Empty;
+        onCoinCollectImage.SetActive(false);
+    }
+
+    public void AddScore()
+    {
+        photonView.RPC("AddScoreRPC", RpcTarget.All, null);
+    }
+    
+    public void SubtractScore()
+    {
+        photonView.RPC("SubtractScoreRPC", RpcTarget.All, null);
+    }
+
+    public void IncreaseHealth(float amount)
+    {
+        photonView.RPC("IncreaseHealthRPC", RpcTarget.All, amount);
+    }
+    
+    [PunRPC]
+    void AddScoreRPC()
+    {
+        killsToWin++;
+    }
+    
+    [PunRPC]
+    void SubtractScoreRPC()
+    {
+        killsToWin--;
+        if (killsToWin <= 0)
+        {
+            killsToWin = 0;
+        }
+    }
+    
+    [PunRPC]
+    void SetActiveObjectRPC(int id)
+    {
+        PhotonView.Find(id).gameObject.SetActive(true);
+    }
+
+    IEnumerator WaitForRespawnCoin(int id)
+    {
+        yield return new WaitForSeconds(coinRespawnTime);
+        photonView.RPC("SetActiveObjectRPC", RpcTarget.All, id);
+    }
+
+    [PunRPC]
+    void IncreaseHealthRPC(float amount)
+    {
+        maxHealth += amount;
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
+
+    [PunRPC]
+    void HealRPC(float amount)
+    {
+        currentHealth += amount;
+    }
+
+    void Heal(float amount)
+    {
+        photonView.RPC("HealRPC", RpcTarget.All, amount);
+    }
+    
+    
+
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (photonView.IsMine)
+        {
+            if (other.gameObject.tag == "Crown" && killsToWin <= 0)
+            {
+                isWinner = true;
+                photonView.RPC("LoadLastScene", RpcTarget.All, null);
+            }
+
+            if (other.gameObject.tag == "Coin")
+            {
+                onCoinCollectImage.SetActive(true);
+                currentTalentPoints++;
+                StartCoroutine(WaitForSeconds());
+                gameManager.GetComponent<RespawnManager>().isCoinSpawned = false;
+            }
+            if (other.gameObject.tag == "Potion")
+            {
+                healthPercentage = Mathf.RoundToInt(currentHealth / maxHealth);
+                Heal(potionHealAmount);
+                healthBar.SetHealthRPC(currentHealth);
+                gameManager.GetComponent<RespawnManager>().isPotionSpawned = false;
+            }
+        }
     }
     
     

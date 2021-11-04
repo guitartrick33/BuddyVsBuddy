@@ -10,22 +10,44 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/RespawnManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProjectileMeteor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../gamebuddycraft/Assets/Photon/PhotonUnityNetworking/Code/PhotonNetworkPart.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/TooltipTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/TooltipSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Tooltip.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LobbyManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/TalentTreeOpen.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CoinManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/PlayerResources.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/FireLaser.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Meteor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Fireball.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/ProjectileFireBall.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/TalentTreeOpen.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScorePrefabManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScoringSystemManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DestroyObjectRPC.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Incinerate.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LobbyManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Meteor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/FireLaser.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CoinManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RespawnManager" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RespawnManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/FireBlast.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FallDamage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ProjectileFireBall.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ProjectileMeteor.cs" />
+      <option value="$PROJECT_DIR$/Assets/OwnershipTransfer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RespawnPrefabManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/RespawnManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScoringSystemManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/TalentTreeUnlock.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/PlayerResources.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="20HILGHEyPfgFbE5CpIJDMqelCb" />
@@ -79,6 +101,17 @@
       <option name="presentableId" value="Default" />
       <updated>1635695031428</updated>
       <workItem from="1635695037416" duration="7345000" />
+      <workItem from="1635767896221" duration="3178000" />
+      <workItem from="1635774857113" duration="1957000" />
+      <workItem from="1635797529882" duration="5067000" />
+      <workItem from="1635802676559" duration="1389000" />
+      <workItem from="1635804352590" duration="2923000" />
+      <workItem from="1635807536179" duration="2435000" />
+      <workItem from="1635838621588" duration="24873000" />
+      <workItem from="1635963031918" duration="4939000" />
+      <workItem from="1635968524457" duration="11343000" />
+      <workItem from="1636010283280" duration="9140000" />
+      <workItem from="1636045394679" duration="4489000" />
     </task>
     <servers />
   </component>

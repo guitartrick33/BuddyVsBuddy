@@ -19,6 +19,10 @@ public class HealthBar : MonoBehaviour
     {
         photonView.RPC("SetHealth", RpcTarget.All, health);
     }
+    public void SetMaxHealthRPC(float health)
+    {
+        photonView.RPC("SetMaxHealth", RpcTarget.All, health);
+    }
     public void SetMaxHealth(float health)
     {
         slider.maxValue = health;

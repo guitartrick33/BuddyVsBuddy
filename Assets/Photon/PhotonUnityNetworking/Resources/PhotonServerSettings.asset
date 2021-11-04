@@ -66,6 +66,25 @@ MonoBehaviour:
   - LoadLastScene
   - isActive
   - isNotActive
+  - UpdateEnemyScoreRPC
+  - UpdateMyScoreRPC
+  - UpdateScore
+  - AddScoreRPC
+  - SubtractScoreRPC
+  - ResetPos
+  - StartParticlesRPC
+  - StopParticlesRPC
+  - DealDamage
+  - SetActiveObjectRPC
+  - SetInactiveObjectRPC
+  - TakeDamageFromEnemyRPC
+  - DealDamageRPC
+  - Heal
+  - HealRPC
+  - AddScore
+  - ResetPosRPC
+  - IncreaseHealth
+  - IncreaseHealthRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

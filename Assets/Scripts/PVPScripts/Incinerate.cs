@@ -27,6 +27,8 @@ public class Incinerate : MonoBehaviour
 
     private PhotonView photonView;
 
+    [SerializeField]
+    private ParticleSystem incinerateParticles;
 
 
     private void Start()
@@ -58,7 +60,7 @@ public class Incinerate : MonoBehaviour
               fireOverlay.enabled = false;
               incinerateBuff.enabled = false;
               incinerateBuffDuration.text = "";
-              Debug.Log(incinerateDuration);
+              photonView.RPC("StopParticlesRPC",RpcTarget.All, null);
           }
           if (Time.time > nextFireTime)
           {
@@ -72,6 +74,7 @@ public class Incinerate : MonoBehaviour
                   duration = true;
                   fireOverlay.enabled = true;
                   incinerateBuff.enabled = true;
+                  photonView.RPC("StartParticlesRPC",RpcTarget.All, null);
               }
               isOnCd = false;
           }
@@ -97,5 +100,17 @@ public class Incinerate : MonoBehaviour
               incinerateLoading.fillAmount = -1;
           }  
         }
+    }
+
+    [PunRPC]
+    void StartParticlesRPC()
+    {
+        incinerateParticles.Play();
+    }
+    
+    [PunRPC]
+    void StopParticlesRPC()
+    {
+        incinerateParticles.Stop();
     }
 }

@@ -54,7 +54,7 @@ public class FireBlast : MonoBehaviour
                     {
                         if (blastRadius >= Vector3.Distance(transform.position, player.transform.position))
                         {
-                            player.GetComponent<PlayerResources>().TakeDamage(damage);
+                            // player.GetComponent<PlayerResources>().TakeDamage(damage);
                         }
                     }
                 }

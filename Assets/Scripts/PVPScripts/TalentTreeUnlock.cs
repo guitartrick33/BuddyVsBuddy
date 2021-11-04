@@ -51,8 +51,7 @@ public class TalentTreeUnlock : MonoBehaviour
     {
         if (TT1IsUnlocked == false && pr.currentTalentPoints > 0)
         {
-            pr.maxHealth += 10;
-            pr.currentHealth = pr.maxHealth;
+            pr.IncreaseHealth(10f);
             TT1IsUnlocked = true;
             pr.currentTalentPoints--;
         }     
@@ -76,7 +75,7 @@ public class TalentTreeUnlock : MonoBehaviour
         }
         if (TT11IsUnlocked == false && pr.currentTalentPoints > 1 && TT1IsUnlocked)
         {
-            pr.maxHealth += 15;
+            pr.IncreaseHealth(15f);
             pr.currentHealth = pr.maxHealth;
             TT11IsUnlocked = true;
             pr.currentTalentPoints -= 2;
@@ -102,8 +101,7 @@ public class TalentTreeUnlock : MonoBehaviour
         }
         if (TT111IsUnlocked == false && pr.currentTalentPoints > 2 && TT11IsUnlocked)
         {
-            pr.maxHealth += 25;
-            pr.currentHealth = pr.maxHealth;
+            pr.IncreaseHealth(25f);
             TT111IsUnlocked = true;
             pr.currentTalentPoints -= 3;
         }

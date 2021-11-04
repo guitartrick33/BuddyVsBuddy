@@ -14,8 +14,10 @@ public class Projectile : MonoBehaviour
     public PhotonView photonView;
     private PlayerResources pr;
     public float baseDamage;
+    private GameObject gameManager;
     public void Start()
     {
+        gameManager = GameObject.Find("GameManager");
         // playerResources = GameObject.FindWithTag("Player").GetComponent<PlayerResources>();
         GameObject[] players = GameObject.FindGameObjectsWithTag("Dummy");
         foreach (GameObject player in players)
@@ -37,12 +39,11 @@ public class Projectile : MonoBehaviour
             {
                 if (myPlayer.GetComponent<Incinerate>().duration)
                 {
-                    collision.gameObject.GetComponent<PlayerResources>().TakeDamage(damage * 2);
-                    Debug.Log("Hi");
+                    collision.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage * 2);
                 }
                 else
                 {
-                    collision.gameObject.GetComponent<PlayerResources>().TakeDamage(damage);
+                    collision.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage);
                 }
                 PhotonNetwork.Instantiate("Impact", transform.position, Quaternion.identity);
                 PhotonNetwork.Destroy(gameObject);
@@ -61,5 +62,4 @@ public class Projectile : MonoBehaviour
             }
         }
     }
-
 }

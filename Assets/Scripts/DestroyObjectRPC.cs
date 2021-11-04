@@ -21,13 +21,9 @@ public class DestroyObjectRPC : MonoBehaviourPunCallbacks
     {
         if (other.gameObject.tag == "Dummy")
         {
-            photonView.RPC("DestroyObject", RpcTarget.All, null);
+            
         }
     }
 
-    [PunRPC]
-    public void DestroyObject()
-    {
-        Destroy(gameObject);
-    }
+    
 }

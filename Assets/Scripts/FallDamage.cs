@@ -49,7 +49,7 @@ public class FallDamage : MonoBehaviour
                 {
                     if (damageMe)
                     {
-                        pr.TakeDamage((startYPos - endYpos - damageThreshold) * damageMultiplier);
+                        // pr.TakeDamage((startYPos - endYpos - damageThreshold) * damageMultiplier);
                         damageMe = false;
                         firstCall = true;
                     }
@@ -63,7 +63,7 @@ public class FallDamage : MonoBehaviour
 
             if (pc.isLava)
             {
-                pr.TakeDamage(pr.maxHealth);
+                // pr.TakeDamage(pr.maxHealth);
             }
         }
     }

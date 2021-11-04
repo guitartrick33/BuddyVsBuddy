@@ -40,6 +40,7 @@ TagManager:
   - winPanel
   - winnerName
   - Coin
+  - MeteorRecastImg
   layers:
   - Default
   - TransparentFX
@@ -49,7 +50,7 @@ TagManager:
   - UI
   - Player
   - Rope
-  - 
+  - Enemy
   - 
   - 
   - 

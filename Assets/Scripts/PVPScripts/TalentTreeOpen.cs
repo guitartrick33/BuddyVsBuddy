@@ -12,7 +12,7 @@ public class TalentTreeOpen : MonoBehaviour
     void Start()
     {
         TalentTree.enabled = true;
-        player = GameObject.FindWithTag("Dummy");
+        player = GameObject.FindGameObjectWithTag("Dummy");
         player.GetComponent<FireLaser>().enabled = false;
     }
 
@@ -33,12 +33,12 @@ public class TalentTreeOpen : MonoBehaviour
         {
             if(isOpened == false)
             {
-                TalentTree.enabled = true;
+                ShowTalentTree();
                 isOpened = true;
             }
             else
             {
-                TalentTree.enabled = false;
+                HideTalentTree();
                 isOpened = false;
             }
         }

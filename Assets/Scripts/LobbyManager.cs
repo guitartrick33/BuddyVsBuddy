@@ -252,6 +252,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public void OnClickPlayButton()
     {
+        playButton.SetActive(false);
         PhotonNetwork.LoadLevel("testscene");
     }
 }
