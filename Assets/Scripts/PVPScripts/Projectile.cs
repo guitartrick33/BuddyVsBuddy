@@ -37,16 +37,19 @@ public class Projectile : MonoBehaviour
         {
             if (collision.gameObject.tag == "Enemy")
             {
-                if (myPlayer.GetComponent<Incinerate>().duration)
+                if (!collision.gameObject.GetComponent<PlayerRespawner>().hasRespawned)
                 {
-                    collision.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage * 2);
+                    if (myPlayer.GetComponent<Incinerate>().duration)
+                    {
+                        collision.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage * 2);
+                    }
+                    else
+                    {
+                        collision.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage);
+                    }
+                    PhotonNetwork.Instantiate("Impact", transform.position, Quaternion.identity);
+                    PhotonNetwork.Destroy(gameObject);
                 }
-                else
-                {
-                    collision.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage);
-                }
-                PhotonNetwork.Instantiate("Impact", transform.position, Quaternion.identity);
-                PhotonNetwork.Destroy(gameObject);
             }
 
             if (collision.gameObject.tag == "Ground")

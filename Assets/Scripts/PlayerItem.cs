@@ -36,8 +36,8 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 
     public void ApplyLocalChanges()
     {
-        // leftArrowButton.SetActive(true);
-        // rightArrowButton.SetActive(true);
+        leftArrowButton.SetActive(true);
+        rightArrowButton.SetActive(true);
     }
 
     public void OnClickLeftArrow()

@@ -45,13 +45,16 @@ public class ProjectileMeteor : MonoBehaviour
                 {
                     if (blastRadius >= Vector3.Distance(transform.position, enemy.transform.position))
                     {
-                        if (myPlayer.GetComponent<Incinerate>().duration)
+                        if (!enemy.GetComponent<PlayerRespawner>().hasRespawned)
                         {
-                            enemy.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage * 2);
-                        }
-                        else
-                        {
-                            enemy.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage);
+                            if (myPlayer.GetComponent<Incinerate>().duration)
+                            {
+                                enemy.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage * 2);
+                            }
+                            else
+                            {
+                                enemy.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage);
+                            }
                         }
                     }
                 }

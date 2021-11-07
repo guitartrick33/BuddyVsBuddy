@@ -75,7 +75,7 @@ public class Fireball : MonoBehaviour
                     {
                         timerCastTimeFireBall -= Time.deltaTime;
                     }
-                    if (Input.GetKeyDown(KeyCode.Alpha2))
+                    if (Input.GetKeyDown(KeyCode.Alpha2) && !gameObject.GetComponent<PlayerRespawner>().hasRespawned)
                     {
                         castingFireBall = true;
                         fireOverlay.enabled = true;

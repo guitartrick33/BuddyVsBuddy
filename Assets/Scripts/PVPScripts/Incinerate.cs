@@ -69,7 +69,7 @@ public class Incinerate : MonoBehaviour
                   incinerateDuration -= Time.deltaTime;
                   incinerateBuffDuration.text = $"{Mathf.RoundToInt(incinerateDuration)}";
               }
-              if (Input.GetKeyDown(KeyCode.Alpha4))
+              if (Input.GetKeyDown(KeyCode.Alpha4) && !gameObject.GetComponent<PlayerRespawner>().hasRespawned)
               {
                   duration = true;
                   fireOverlay.enabled = true;

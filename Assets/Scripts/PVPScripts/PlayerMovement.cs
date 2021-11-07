@@ -31,13 +31,21 @@ public class PlayerMovement : MonoBehaviour
     private int extraJumps;
     public int extraJumpValue;
 
-    private bool facingRight = true;
+    public bool facingRight = true;
 
     public Text nickName;
     public SpriteRenderer sprite;
+
+    [SerializeField] private Dash dash;
+    public ClassEnum classEnum;
+    
     
     void Start()
     {
+        if (classEnum == ClassEnum.WARRIOR)
+        {
+            dash = GetComponent<Dash>();
+        }
         startPos = gameObject.transform.position;
         sprite.flipX = false;
         extraJumps = extraJumpValue;
@@ -55,15 +63,28 @@ public class PlayerMovement : MonoBehaviour
             
             moveInput = Input.GetAxis("Horizontal");
             ropeInput = Input.GetAxis("Vertical");
-            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+
+            if (classEnum == ClassEnum.WARRIOR)
+            {
+                if (!dash.isDashing)
+                {
+                    rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+                }
+            }
+            else
+            {
+                rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+            }
 
             if (moveInput > 0)
             {
                 photonView.RPC("FlipRight", RpcTarget.All, null);
+                facingRight = true;
             }
             else if (moveInput < 0)
             {
                 photonView.RPC("FlipLeft", RpcTarget.All, null);
+                facingRight = false;
             }
         }
     }

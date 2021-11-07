@@ -87,7 +87,7 @@ public class FireLaser : MonoBehaviourPunCallbacks
                     {
                         timerCastTimelaser -= Time.deltaTime;
                     }
-                    if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Mouse0))
+                    if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Mouse0)) && !gameObject.GetComponent<PlayerRespawner>().hasRespawned)
                     {
                         castinglaser = true;
                         photonView.RPC("StartParticlesLaser", RpcTarget.All, null);

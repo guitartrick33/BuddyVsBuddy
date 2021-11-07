@@ -35,4 +35,9 @@ public class WinHandler : MonoBehaviour
     {
         PhotonNetwork.LoadLevel("testscene");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

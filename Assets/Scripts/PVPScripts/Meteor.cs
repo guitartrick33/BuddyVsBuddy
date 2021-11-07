@@ -75,7 +75,7 @@ public class Meteor : MonoBehaviour
                             {
                                 timerCastTime -= Time.deltaTime;
                             }
-                            if (Input.GetKeyDown(KeyCode.Alpha3))
+                            if (Input.GetKeyDown(KeyCode.Alpha3) && !gameObject.GetComponent<PlayerRespawner>().hasRespawned)
                             {
                                 photonView.RPC("StartParticlesMeteor", RpcTarget.All, null);
                                 casting = true;
