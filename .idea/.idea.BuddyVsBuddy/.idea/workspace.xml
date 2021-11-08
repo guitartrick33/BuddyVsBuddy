@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="554c7964-7036-4d22-957a-3fd873be3639" name="Default Changelist" comment="" />
+    <list default="true" id="554c7964-7036-4d22-957a-3fd873be3639" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BuddyVsBuddy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BuddyVsBuddy/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BuddyVsBuddy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BuddyVsBuddy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/Example.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/Example.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FantasyIconsPackFree/Atlases/Icons.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FantasyIconsPackFree/Atlases/Icons.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/testscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/testscene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,18 +23,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProjectileMeteor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TalentHealth.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TalentType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../gamebuddycraft/Assets/Photon/PhotonUnityNetworking/Code/PhotonNetworkPart.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../gamebuddycraft/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TalentTier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TalentFireball.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TalentTier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TalentMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TalentMeteor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProjectileMeteor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TalentType.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/TooltipTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/TooltipSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Tooltip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/ProjectileFireBall.cs" />
@@ -71,6 +81,9 @@
       <option value="$PROJECT_DIR$/Assets/TalentHealth.cs" />
       <option value="$PROJECT_DIR$/Assets/TalentFireball.cs" />
       <option value="$PROJECT_DIR$/Assets/TalentMeteor.cs" />
+      <option value="$PROJECT_DIR$/Assets/TalentJumps.cs" />
+      <option value="$PROJECT_DIR$/Assets/TalentIncinerate.cs" />
+      <option value="$PROJECT_DIR$/Assets/TalentMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="20HILGHEyPfgFbE5CpIJDMqelCb" />
@@ -98,7 +111,6 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -108,7 +120,6 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -144,6 +155,7 @@
       <workItem from="1636239862379" duration="106000" />
       <workItem from="1636277858631" duration="2306000" />
       <workItem from="1636288697343" duration="5410000" />
+      <workItem from="1636356440032" duration="3380000" />
     </task>
     <servers />
   </component>
@@ -152,6 +164,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
