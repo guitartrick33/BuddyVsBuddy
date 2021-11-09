@@ -113,9 +113,11 @@ public class PlayerResources : MonoBehaviour
     [PunRPC]
     void TakeDamageRPC(float amount, int id)
     {
-        currentHealth -= amount;
-        healthBar.SetHealthRPC(currentHealth);
-        lastPersonToHitMe = PhotonView.Find(id).gameObject;
+        {
+            currentHealth -= amount;
+            healthBar.SetHealthRPC(currentHealth);
+            lastPersonToHitMe = PhotonView.Find(id).gameObject;  
+        }
     }
 
 

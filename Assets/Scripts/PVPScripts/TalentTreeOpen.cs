@@ -5,27 +5,47 @@ using UnityEngine.UI;
 
 public class TalentTreeOpen : MonoBehaviour
 {
-    public Canvas TalentTree;
+    public List<GameObject> canvases;
     bool isOpened = false;
     public GameObject notification;
     private GameObject player;
+    public GameObject currentCanvas;
     void Start()
     {
-        TalentTree.enabled = true;
         player = GameObject.FindGameObjectWithTag("Dummy");
-        player.GetComponent<FireLaser>().enabled = false;
+        if (player.GetComponent<PlayerMovement>().classEnum == ClassEnum.MAGE)
+        {
+            player.GetComponent<FireLaser>().enabled = false;
+        }
+        foreach (GameObject canvas in canvases)
+        {
+            if (canvas.GetComponent<TalentClassType>().classType == player.GetComponent<PlayerMovement>().classEnum)
+            {
+                currentCanvas = canvas;
+            }
+            else
+            {
+                canvas.SetActive(false);
+            }
+        }
     }
 
     public void ShowTalentTree()
     {
-        player.GetComponent<FireLaser>().enabled = false;
-        TalentTree.enabled = true;
+        if (player.GetComponent<PlayerMovement>().classEnum == ClassEnum.MAGE)
+        {
+            player.GetComponent<FireLaser>().enabled = false;
+        }
+        currentCanvas.SetActive(true);
     }
 
     public void HideTalentTree()
     {
-        TalentTree.enabled = false;
-        player.GetComponent<FireLaser>().enabled = true;
+        currentCanvas.SetActive(false);
+        if (player.GetComponent<PlayerMovement>().classEnum == ClassEnum.MAGE)
+        {
+            player.GetComponent<FireLaser>().enabled = true;
+        }
     }
     void Update()
     {

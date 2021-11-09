@@ -40,13 +40,16 @@ public class FireLaser : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        firelaserLoading = GameObject.FindWithTag("LaserImage").GetComponent<Image>();
-        fireLaserCd = GameObject.FindWithTag("LaserText").GetComponent<Text>();
-        timerCastTimelaser = castTimelaser;
-        meteor = GetComponent<Meteor>();
-        fireball = GetComponent<Fireball>();
-        cooldownTimer = cooldownTime;
-        photonView = gameObject.GetComponent<PhotonView>();
+        photonView = gameObject.GetComponent<PhotonView>(); 
+        if (photonView.IsMine)
+        {
+            firelaserLoading = GameObject.FindWithTag("LaserImage").GetComponent<Image>();
+            fireLaserCd = GameObject.FindWithTag("LaserText").GetComponent<Text>();
+            timerCastTimelaser = castTimelaser;
+            meteor = GetComponent<Meteor>();
+            fireball = GetComponent<Fireball>();
+            cooldownTimer = cooldownTime;
+        }
     }
 
     void Update()

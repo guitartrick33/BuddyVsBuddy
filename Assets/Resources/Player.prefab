@@ -52,7 +52,6 @@ GameObject:
   - component: {fileID: -7278121363013033160}
   - component: {fileID: 5273112277094426847}
   - component: {fileID: -2641150725242278885}
-  - component: {fileID: -3365854543409804398}
   m_Layer: 0
   m_Name: Player
   m_TagString: Dummy
@@ -254,8 +253,9 @@ MonoBehaviour:
   facingRight: 0
   nickName: {fileID: 8795949070955642677}
   sprite: {fileID: 8255087003496024}
-  dash: {fileID: -3365854543409804398}
+  dash: {fileID: 0}
   classEnum: 0
+  isSlowed: 0
 --- !u!114 &8255087003496018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,22 +403,6 @@ MonoBehaviour:
   hasRespawned: 0
   respawnColor: {r: 1, g: 1, b: 1, a: 0.19607843}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &-3365854543409804398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8255087003496017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb29c4db2a2a6614bb9ae0d5ee58209d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dashDistance: 8
-  isOnCooldown: 0
-  cooldownTimer: 2.5
-  isDashing: 0
 --- !u!1 &8255087094895032
 GameObject:
   m_ObjectHideFlags: 0

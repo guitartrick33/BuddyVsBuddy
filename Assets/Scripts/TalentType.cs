@@ -9,5 +9,8 @@ public enum TalentType
     METEORCD,
     EXTRAJUMP,
     INCINERATE,
-    SPEED
+    SPEED,
+    SLAM,
+    DASH,
+    SHIELD
 }

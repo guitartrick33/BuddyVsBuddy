@@ -38,6 +38,10 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Dash dash;
     public ClassEnum classEnum;
+    private Animator animator;
+    public bool isSlowed;
+    private float slowTimer;
+    private float startSpeed;
     
     
     void Start()
@@ -45,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         if (classEnum == ClassEnum.WARRIOR)
         {
             dash = GetComponent<Dash>();
+            animator = GetComponent<Animator>();
         }
         startPos = gameObject.transform.position;
         sprite.flipX = false;
@@ -52,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         nickName.text = photonView.Owner.NickName;
         isOnRope = false;
+        slowTimer = 3f;
+        startSpeed = speed;
     }
 
     private void FixedUpdate()
@@ -117,6 +124,17 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = Vector2.up * jumpForce;
                 extraJumps--;
             }
+
+            if (isSlowed)
+            {
+                slowTimer -= Time.deltaTime;
+                if (slowTimer <= 0)
+                {
+                    isSlowed = false;
+                    speed = startSpeed;
+                    slowTimer = 3f;
+                }
+            }
         }
     }
 
@@ -124,12 +142,20 @@ public class PlayerMovement : MonoBehaviour
     void FlipLeft()
     {
         sprite.flipX = false;
+        if (classEnum == ClassEnum.WARRIOR)
+        {
+            animator.SetBool("isFacingRight", false);
+        }
     }
 
     [PunRPC]
     void FlipRight()
     {
         sprite.flipX = true;
+        if (classEnum == ClassEnum.WARRIOR)
+        {
+            animator.SetBool("isFacingRight", true);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)

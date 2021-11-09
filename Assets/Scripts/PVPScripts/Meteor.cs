@@ -37,14 +37,17 @@ public class Meteor : MonoBehaviour
 
     private void Start()
     {
-        meteorLoading = GameObject.FindWithTag("MeteorImage").GetComponent<Image>();
-        meteorCd = GameObject.FindWithTag("MeteorText").GetComponent<Text>();
-        fireOverlay = GameObject.FindWithTag("MeteorFire").GetComponent<Image>();
-        timerCastTime = castTime;
-        fireball = GetComponent<Fireball>();
-        cooldownTimer = cooldownTime;
-        fireOverlay.enabled = false;
-        photonView = gameObject.GetComponent<PhotonView>();
+        photonView = gameObject.GetComponent<PhotonView>(); 
+        if (photonView.IsMine)
+        {
+            meteorLoading = GameObject.FindWithTag("MeteorImage").GetComponent<Image>();
+            meteorCd = GameObject.FindWithTag("MeteorText").GetComponent<Text>();
+            fireOverlay = GameObject.FindWithTag("MeteorFire").GetComponent<Image>();
+            timerCastTime = castTime;
+            fireball = GetComponent<Fireball>();
+            cooldownTimer = cooldownTime;
+            fireOverlay.enabled = false;
+        }
     }
 
     void Update()

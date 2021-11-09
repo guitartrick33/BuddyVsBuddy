@@ -33,17 +33,20 @@ public class Incinerate : MonoBehaviour
 
     private void Start()
     {
-        incinerateLoading = GameObject.FindWithTag("IncImage").GetComponent<Image>();
-        incinerateCd = GameObject.FindWithTag("IncText").GetComponent<Text>();
-        fireOverlay = GameObject.FindWithTag("IncFire").GetComponent<Image>();
-        incinerateBuff = GameObject.FindWithTag("IncBuff").GetComponent<Image>();
-        incinerateBuffDuration = GameObject.FindWithTag("IncBuffText").GetComponent<Text>();
-        incinerateDuration = durationTime;
-        cooldownTimer = cooldownTime;
-        fireOverlay.enabled = false;
-        incinerateBuff.enabled = false;
-        incinerateBuffDuration.text = "";
-        photonView = gameObject.GetComponent<PhotonView>();
+        photonView = gameObject.GetComponent<PhotonView>(); 
+        if (photonView.IsMine)
+        {
+            incinerateLoading = GameObject.FindWithTag("IncImage").GetComponent<Image>();
+            incinerateCd = GameObject.FindWithTag("IncText").GetComponent<Text>();
+            fireOverlay = GameObject.FindWithTag("IncFire").GetComponent<Image>();
+            incinerateBuff = GameObject.FindWithTag("IncBuff").GetComponent<Image>();
+            incinerateBuffDuration = GameObject.FindWithTag("IncBuffText").GetComponent<Text>();
+            incinerateDuration = durationTime;
+            cooldownTimer = cooldownTime;
+            fireOverlay.enabled = false;
+            incinerateBuff.enabled = false;
+            incinerateBuffDuration.text = "";
+        }
     }
 
     void Update()

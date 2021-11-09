@@ -49,7 +49,11 @@ public class ProjectileMeteor : MonoBehaviour
                         {
                             if (myPlayer.GetComponent<Incinerate>().duration)
                             {
-                                enemy.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage * 2);
+                                if(enemy.GetComponent<PlayerMovement>().classEnum == ClassEnum.WARRIOR && enemy.GetComponent<Shield>().isShieldActive){}
+                                else
+                                {
+                                    enemy.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, damage * 2);
+                                }
                             }
                             else
                             {

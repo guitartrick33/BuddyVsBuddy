@@ -41,6 +41,15 @@ TagManager:
   - winnerName
   - Coin
   - MeteorRecastImg
+  - meleeAttackCDText
+  - meleeAttackCDImage
+  - dashText
+  - dashImage
+  - Axe
+  - shieldImage
+  - shieldText
+  - axeImage
+  - axeText
   layers:
   - Default
   - TransparentFX

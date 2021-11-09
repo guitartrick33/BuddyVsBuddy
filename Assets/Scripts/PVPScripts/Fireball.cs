@@ -38,15 +38,18 @@ public class Fireball : MonoBehaviour
 
     private void Start()
     {
-        fireBallLoading = GameObject.FindWithTag("FBimage").GetComponent<Image>();
-        fireBallCd = GameObject.FindWithTag("FBtext").GetComponent<Text>();
-        fireOverlay = GameObject.FindWithTag("FBfire").GetComponent<Image>();
-        timerCastTimeFireBall = castTimeFireBall;
-        meteor = GetComponent<Meteor>();
-        cooldownTimer = cooldownTime;
-        fireOverlay.enabled = false;
         photonView = gameObject.GetComponent<PhotonView>();
-        damage = baseDamage;
+        if (photonView.IsMine)
+        {
+            fireBallLoading = GameObject.FindWithTag("FBimage").GetComponent<Image>();
+            fireBallCd = GameObject.FindWithTag("FBtext").GetComponent<Text>();
+            fireOverlay = GameObject.FindWithTag("FBfire").GetComponent<Image>();
+            timerCastTimeFireBall = castTimeFireBall;
+            meteor = GetComponent<Meteor>();
+            cooldownTimer = cooldownTime;
+            fireOverlay.enabled = false;
+            damage = baseDamage;
+        }
     }
 
     void Update()

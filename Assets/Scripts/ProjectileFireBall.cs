@@ -36,11 +36,19 @@ public class ProjectileFireBall : MonoBehaviour
                 {
                     if (myPlayer.GetComponent<Incinerate>().duration)
                     {
-                        collision.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, myPlayer.GetComponent<Fireball>().damage * 2);
+                        if(collision.gameObject.GetComponent<PlayerMovement>().classEnum == ClassEnum.WARRIOR && collision.gameObject.GetComponent<Shield>().isShieldActive){}
+                        else
+                        {
+                            collision.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, myPlayer.GetComponent<Fireball>().damage * 2);
+                        }
                     }
                     else
                     {
-                        collision.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, myPlayer.GetComponent<Fireball>().damage);
+                        if(collision.gameObject.GetComponent<PlayerMovement>().classEnum == ClassEnum.WARRIOR && collision.gameObject.GetComponent<Shield>().isShieldActive){}
+                        else
+                        {
+                            collision.gameObject.GetComponent<PlayerResources>().TakeDamage(myPlayer.GetComponent<PhotonView>().ViewID, myPlayer.GetComponent<Fireball>().damage);
+                        }
                     }
                     PhotonNetwork.Instantiate("Impact", transform.position, Quaternion.identity);
                     PhotonNetwork.Destroy(gameObject);

@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="554c7964-7036-4d22-957a-3fd873be3639" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BuddyVsBuddy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BuddyVsBuddy/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BuddyVsBuddy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BuddyVsBuddy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/Example.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/Example.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyIconsPackFree/Atlases/Icons.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FantasyIconsPackFree/Atlases/Icons.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/testscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/testscene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-    </list>
+    <list default="true" id="554c7964-7036-4d22-957a-3fd873be3639" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,29 +11,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/TalentHealth.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TalentFireball.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TalentTier.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TalentMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TalentMeteor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProjectileMeteor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TalentType.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/TooltipSystem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Tooltip.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/ProjectileFireBall.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScorePrefabManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScoringSystemManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/DestroyObjectRPC.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CoinManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/RespawnManager" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/RespawnManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/FireBlast.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FallDamage.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" />
       <option value="$PROJECT_DIR$/Assets/OwnershipTransfer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RespawnPrefabManager.cs" />
       <option value="$PROJECT_DIR$/Assets/RespawnManager.cs" />
@@ -53,21 +22,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LobbyManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WinHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Projectile.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ProjectileFireBall.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ProjectileMeteor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Incinerate.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Fireball.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Meteor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/FireLaser.cs" />
       <option value="$PROJECT_DIR$/Assets/PlayerRespawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/PlayerResources.cs" />
       <option value="$PROJECT_DIR$/Assets/Dash.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/TalentTreeOpen.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ClassEnum.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/PlayerMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dash.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Talents/TalentTier.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Talents/TalentPointsManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Talents/TalentTreeHealth.cs" />
@@ -84,6 +42,30 @@
       <option value="$PROJECT_DIR$/Assets/TalentJumps.cs" />
       <option value="$PROJECT_DIR$/Assets/TalentIncinerate.cs" />
       <option value="$PROJECT_DIR$/Assets/TalentMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/TalentClassTyoe.cs" />
+      <option value="$PROJECT_DIR$/Assets/TalentClassType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/TalentTreeOpen.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpellsManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/MeleeAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Incinerate.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/FireLaser.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Fireball.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Meteor.cs" />
+      <option value="$PROJECT_DIR$/Assets/ShieldBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/PlayerResources.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/Projectile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ProjectileFireBall.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ProjectileMeteor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PVPScripts/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Shield.cs" />
+      <option value="$PROJECT_DIR$/Assets/AxeThrow.cs" />
+      <option value="$PROJECT_DIR$/Assets/AxeProjectile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TalentType.cs" />
+      <option value="$PROJECT_DIR$/Assets/TalentSlam.cs" />
+      <option value="$PROJECT_DIR$/Assets/TalentShield.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dash.cs" />
+      <option value="$PROJECT_DIR$/Assets/TalentDash.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MeleeAttack.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="20HILGHEyPfgFbE5CpIJDMqelCb" />
@@ -111,6 +93,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -120,6 +103,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -156,6 +140,10 @@
       <workItem from="1636277858631" duration="2306000" />
       <workItem from="1636288697343" duration="5410000" />
       <workItem from="1636356440032" duration="3380000" />
+      <workItem from="1636376471647" duration="5706000" />
+      <workItem from="1636387739057" duration="18421000" />
+      <workItem from="1636414345051" duration="160000" />
+      <workItem from="1636447145177" duration="1137000" />
     </task>
     <servers />
   </component>
@@ -174,6 +162,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
