@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby.unity
     guid: 0ec8f3e91773eea41b7e4ae97213ccbb
   - enabled: 1
-    path: Assets/Scenes/testscene.unity
+    path: Assets/Scenes/Map1.unity
     guid: 877edbb8261b4e4438fe69404172d697
   - enabled: 1
     path: Assets/Scenes/gameover.unity

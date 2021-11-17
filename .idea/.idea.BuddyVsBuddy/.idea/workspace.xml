@@ -11,16 +11,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/MapManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProjectileMeteor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/OwnershipTransfer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RespawnPrefabManager.cs" />
       <option value="$PROJECT_DIR$/Assets/RespawnManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScoringSystemManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LobbyManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WinHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/PlayerRespawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Dash.cs" />
@@ -66,6 +65,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Dash.cs" />
       <option value="$PROJECT_DIR$/Assets/TalentDash.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MeleeAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/MapManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LobbyManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="20HILGHEyPfgFbE5CpIJDMqelCb" />
@@ -144,6 +145,7 @@
       <workItem from="1636387739057" duration="18421000" />
       <workItem from="1636414345051" duration="160000" />
       <workItem from="1636447145177" duration="1137000" />
+      <workItem from="1637176909669" duration="3313000" />
     </task>
     <servers />
   </component>

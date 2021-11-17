@@ -31,7 +31,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public PlayerItem playerItemPrefab;
     public Transform playerItemParent;
     public InputField searchTerm;
-    public Text errorText;
+    public Text errorCreationText;
+    public Text errorJoinText;
 
     public Image chatImage;
     private ChatManager chatManager;
@@ -40,6 +41,12 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public GameObject playButton;
 
+    public Color normalMapColor;
+    public Color highlightMapColor;
+    public GameObject mapPanel;
+    public List<GameObject> maps;
+    
+
     private void Start()
     {
         PhotonNetwork.JoinLobby();
@@ -47,7 +54,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         panelManager = GetComponent<PanelManager>();
         chatManager.enabled = false;
         chatImage.gameObject.SetActive(false);
-        errorText.text = "";
+        errorCreationText.text = "";
+        errorJoinText.text = "";
+        mapPanel.SetActive(false);
     }
 
     /* Creates a room with the name you've selected in the input field */
@@ -61,19 +70,31 @@ public class LobbyManager : MonoBehaviourPunCallbacks
                 if (roomInputField.text.ToLower() == word.ToLower() || roomInputField.text.ToLower().Contains(word.ToLower()))
                 {
                     // usernameInput.text = "";
-                    errorText.text = "Room name prohibited";
+                    errorCreationText.text = "Room name prohibited";
                     isProhibited = true;
                     StartCoroutine(WaitErrorText());
                 }
             }
             if (!isProhibited)
             {
-                PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = (byte)maxPlayers, BroadcastPropsChangeToAll = true });
+                foreach (GameObject g in maps)
+                {
+                    if (g.GetComponent<MapManager>().isSelected)
+                    {
+                        PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = (byte)maxPlayers, BroadcastPropsChangeToAll = true});
+                        errorCreationText.text = "";
+                        break;
+                    }
+                    else
+                    {
+                        errorCreationText.text = "Choose a map!"; 
+                    }
+                }
             }
         }
         else
         {
-            errorText.text = "Enter a name";
+            errorCreationText.text = "Enter a name";
             StartCoroutine(WaitErrorText());
         }
     }
@@ -132,21 +153,21 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     /* Check for errors */
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
-        errorText.text = message;
+        errorJoinText.text = message;
         roomInputField.text = "";
         StartCoroutine(WaitErrorText());
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
-        errorText.text = message;
+        errorJoinText.text = message;
         roomInputField.text = "";
         StartCoroutine(WaitErrorText());
     }
     
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
-        errorText.text = message;
+        errorCreationText.text = message;
         roomInputField.text = "";
         StartCoroutine(WaitErrorText());
     }
@@ -225,17 +246,30 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
         if (!foundRoom)
         {
-            errorText.text = "No room found";
+            errorJoinText.text = "No room found";
             roomInputField.text = "";
 
         }
         StartCoroutine(WaitErrorText());
     }
+
+    public void OpenMapPanel()
+    {
+        mapPanel.SetActive(true);
+    }
+    
+    public void CloseMapPanel()
+    {
+        mapPanel.SetActive(false);
+    }
+    
+    
     
     IEnumerator WaitErrorText()
     {
         yield return new WaitForSeconds(1.5f);
-        errorText.text = "";
+        errorJoinText.text = "";
+        errorCreationText.text = "";
     }
     
 
@@ -263,6 +297,12 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void OnClickPlayButton()
     {
         playButton.SetActive(false);
-        PhotonNetwork.LoadLevel("testscene");
+        foreach (GameObject g in maps)
+        {
+            if (g.GetComponent<MapManager>().isSelected)
+            {
+                PhotonNetwork.LoadLevel(g.GetComponent<MapManager>().mapName);
+            }
+        }
     }
 }
