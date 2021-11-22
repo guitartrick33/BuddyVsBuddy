@@ -45,7 +45,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public Color highlightMapColor;
     public GameObject mapPanel;
     public List<GameObject> maps;
-    
+    public Image mapImage;
+    private string selectedMapName;
+    public GameObject selectedMap;
+
+    private GameObject persistManager;
 
     private void Start()
     {
@@ -57,6 +61,22 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         errorCreationText.text = "";
         errorJoinText.text = "";
         mapPanel.SetActive(false);
+        if (PhotonNetwork.CurrentRoom != null)
+        {
+            PhotonNetwork.LeaveRoom();
+        }
+        persistManager = GameObject.Find("PersistManager");
+        foreach (GameObject map in maps)
+        {
+            map.GetComponent<MapManager>().isSelected = false;
+        }
+        GameObject defaultMap = maps[0];
+        selectedMap = defaultMap;
+        defaultMap.GetComponent<MapManager>().isSelected = true;
+        defaultMap.GetComponent<MapManager>().border.enabled = true;
+        defaultMap.GetComponent<MapManager>().mapImage.color = highlightMapColor;
+        mapImage.GetComponent<Image>().sprite = defaultMap.GetComponent<Image>().sprite;
+        selectedMapName = defaultMap.GetComponent<MapManager>().levelName;
     }
 
     /* Creates a room with the name you've selected in the input field */
@@ -81,7 +101,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
                 {
                     if (g.GetComponent<MapManager>().isSelected)
                     {
-                        PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = (byte)maxPlayers, BroadcastPropsChangeToAll = true});
+                        PhotonNetwork.CreateRoom(roomInputField.text + " - " + selectedMap.GetComponent<MapManager>().mapName, new RoomOptions() { MaxPlayers = (byte)maxPlayers, BroadcastPropsChangeToAll = true});
                         errorCreationText.text = "";
                         break;
                     }
@@ -261,6 +281,15 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void CloseMapPanel()
     {
         mapPanel.SetActive(false);
+        foreach (GameObject map in maps)
+        {
+            if (map.GetComponent<MapManager>().isSelected)
+            {
+                mapImage.GetComponent<Image>().sprite = map.GetComponent<Image>().sprite;
+                selectedMapName = map.GetComponent<MapManager>().levelName;
+                selectedMap = map;
+            }
+        }
     }
     
     
@@ -283,6 +312,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     private void Update()
     {
+        persistManager.GetComponent<SaveNickName>().levelName = selectedMapName;
+        
         maxPlayers = dropdown.value + 2;
         if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount <= maxPlayers)
         {
@@ -297,12 +328,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void OnClickPlayButton()
     {
         playButton.SetActive(false);
-        foreach (GameObject g in maps)
-        {
-            if (g.GetComponent<MapManager>().isSelected)
-            {
-                PhotonNetwork.LoadLevel(g.GetComponent<MapManager>().mapName);
-            }
-        }
+        PhotonNetwork.LoadLevel(selectedMapName);
     }
 }

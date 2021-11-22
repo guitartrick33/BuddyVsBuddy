@@ -15,8 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby.unity
     guid: 0ec8f3e91773eea41b7e4ae97213ccbb
   - enabled: 1
-    path: Assets/Scenes/Map1.unity
+    path: Assets/Scenes/ForrestLevel.unity
     guid: 877edbb8261b4e4438fe69404172d697
+  - enabled: 1
+    path: Assets/Scenes/LavaLevel.unity
+    guid: c800f9983d04fda4dbd0ee4ebc47d5d1
   - enabled: 1
     path: Assets/Scenes/gameover.unity
     guid: 7bf786d441827664984fd381b5beec82

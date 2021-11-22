@@ -51,6 +51,7 @@ public class MeleeAttack : MonoBehaviour
                         if (!enemy.GetComponent<PlayerRespawner>().hasRespawned)
                         {
                             enemy.GetComponent<PlayerResources>().TakeDamage(photonView.ViewID, 15);
+                            PhotonNetwork.Instantiate("AxeImpact", enemy.transform.position, Quaternion.identity);
                         }
                     }
 

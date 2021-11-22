@@ -9,14 +9,12 @@ public class PlayerRespawner : MonoBehaviour
     private PhotonView photonView;
     public float respawnTimer;
     public bool hasRespawned;
-    private PlayerResources pr;
     [SerializeField] private Color respawnColor;
     [SerializeField] private Color normalColor;
 
     private void Start()
     {
         photonView = gameObject.GetComponent<PhotonView>();
-        pr = gameObject.GetComponent<PlayerResources>();
     }
 
     public void PlayerRespawnTimer()
@@ -25,9 +23,21 @@ public class PlayerRespawner : MonoBehaviour
         StartCoroutine(WaitForRespawnTimer());
     }
 
+    public void StartRespawnTimer()
+    {
+        photonView.RPC("SetPlayerRespawnModeRPC", RpcTarget.All, null);
+        StartCoroutine(WaitForRespawnTimerStart());
+    }
+
     IEnumerator WaitForRespawnTimer()
     {
         yield return new WaitForSeconds(respawnTimer);
+        photonView.RPC("SetPlayerNormalModeRPC", RpcTarget.All, null);
+    }
+    
+    IEnumerator WaitForRespawnTimerStart()
+    {
+        yield return new WaitForSeconds(6);
         photonView.RPC("SetPlayerNormalModeRPC", RpcTarget.All, null);
     }
 

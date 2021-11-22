@@ -200,7 +200,7 @@ MonoBehaviour:
   spellSpeed: 30
   player: {fileID: 8255087003496017}
   damage: 0
-  baseDamage: 15
+  baseDamage: 25
 --- !u!114 &8255087003496020
 MonoBehaviour:
   m_ObjectHideFlags: 0

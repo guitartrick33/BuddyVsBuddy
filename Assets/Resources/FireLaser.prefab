@@ -14699,7 +14699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 7.5
   photonView: {fileID: -6373717801646035749}
-  baseDamage: 7.5
+  baseDamage: 10
 --- !u!1 &1399422420123134
 GameObject:
   m_ObjectHideFlags: 0

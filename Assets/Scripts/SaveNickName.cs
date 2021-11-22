@@ -6,6 +6,7 @@ using UnityEngine;
 public class SaveNickName : MonoBehaviour
 {
     public string winnerNick;
+    public string levelName;
 
     private void Awake()
     {
@@ -15,5 +16,6 @@ public class SaveNickName : MonoBehaviour
     private void Start()
     {
         winnerNick = string.Empty;
+        levelName = string.Empty;
     }
 }

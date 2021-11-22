@@ -11,6 +11,7 @@ public class WinHandler : MonoBehaviour
     public GameObject button;
     private GameObject winnerNickname;
     public Text winnerText;
+    public Color guestButtonColor;
 
     private void Start()
     {
@@ -27,13 +28,19 @@ public class WinHandler : MonoBehaviour
         }
         else
         {
-            button.SetActive(false);
+            button.GetComponent<Image>().color = guestButtonColor;
+            button.GetComponent<Button>().enabled = false;
         }
     }
 
-    public void ReloadScene()
+    public void RestartGameButton()
     {
-        PhotonNetwork.LoadLevel("testscene");
+        PhotonNetwork.LoadLevel(winnerNickname.GetComponent<SaveNickName>().levelName);
+    }
+    
+    public void BackToLobbyScene()
+    {
+        PhotonNetwork.LoadLevel("Lobby");
     }
 
     public void QuitGame()

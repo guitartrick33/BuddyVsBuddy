@@ -39,8 +39,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void BackToLobby()
     {
-        PhotonNetwork.Disconnect();
-        SceneManager.LoadScene("PlayMenu");
+        SceneManager.LoadScene("Lobby");
     }
 
     public void Quit()

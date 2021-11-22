@@ -273,7 +273,7 @@ MonoBehaviour:
     SynchronizeType: 1
     Name: isFacingRight
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: Attack
   - Type: 4
     SynchronizeType: 0
@@ -398,11 +398,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 8255086916904652}
-  attackRange: 1
+  attackRange: 1.25
   enemyLayers:
     serializedVersion: 2
     m_Bits: 256
-  damage: 25
+  damage: 30
   cooldown: 1
 --- !u!114 &1850584647711501010
 MonoBehaviour:

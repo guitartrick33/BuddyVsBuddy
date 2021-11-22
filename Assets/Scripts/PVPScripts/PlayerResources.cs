@@ -52,6 +52,7 @@ public class PlayerResources : MonoBehaviour
         isWinner = false;
         winnerNickname = GameObject.FindWithTag("winnerName");
         healthBar.SetMaxHealth(maxHealth);
+        StartCoroutine(WaitForSecondsRespawnStart());
     }
 
     private void Update()
@@ -77,11 +78,23 @@ public class PlayerResources : MonoBehaviour
     {
         photonView.RPC("TakeDamageRPC", RpcTarget.All, amount, id);
     }
+    
+    public void TakeDamageEnvironment(float amount)
+    {
+        photonView.RPC("TakeDamageEnvironmentRPC", RpcTarget.All, amount);
+    }
 
     IEnumerator WaitForSeconds()
     {
         yield return new WaitForSeconds(2);
         onCoinCollectImage.SetActive(false);
+    }
+    
+    IEnumerator WaitForSecondsRespawnStart()
+    {
+        yield return new WaitForSeconds(0.1f);
+        onCoinCollectImage.SetActive(false);
+        respawner.StartRespawnTimer();
     }
 
     public void AddScore()
@@ -117,6 +130,15 @@ public class PlayerResources : MonoBehaviour
             currentHealth -= amount;
             healthBar.SetHealthRPC(currentHealth);
             lastPersonToHitMe = PhotonView.Find(id).gameObject;  
+        }
+    }
+    
+    [PunRPC]
+    void TakeDamageEnvironmentRPC(float amount)
+    {
+        {
+            currentHealth -= amount;
+            healthBar.SetHealthRPC(currentHealth);
         }
     }
 
@@ -171,7 +193,12 @@ public class PlayerResources : MonoBehaviour
     void HealRPC(float amount)
     {
         currentHealth += amount;
+        if (currentHealth >= maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
     }
+    
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -198,6 +225,11 @@ public class PlayerResources : MonoBehaviour
                 Heal(potionHealAmount);
                 healthBar.SetHealthRPC(currentHealth);
                 gameManager.GetComponent<RespawnManager>().isPotionSpawned = false;
+            }
+
+            if (other.gameObject.tag == "Lava")
+            {
+                TakeDamageEnvironment(maxHealth);
             }
         }
     }

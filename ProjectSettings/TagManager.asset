@@ -50,6 +50,8 @@ TagManager:
   - shieldText
   - axeImage
   - axeText
+  - Lava
+  - KillText
   layers:
   - Default
   - TransparentFX
@@ -60,7 +62,7 @@ TagManager:
   - Player
   - Rope
   - Enemy
-  - 
+  - Lava
   - 
   - 
   - 

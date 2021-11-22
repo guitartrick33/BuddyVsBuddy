@@ -9,6 +9,7 @@ public class MapManager : MonoBehaviour
     public bool isSelected;
     private LobbyManager lobbyManager;
     public Image mapImage;
+    public string levelName;
     public string mapName;
 
     [SerializeField] public Image border;
@@ -16,7 +17,6 @@ public class MapManager : MonoBehaviour
     private void Start()
     {
         lobbyManager = GameObject.Find("LobbyManager").GetComponent<LobbyManager>();
-        border.enabled = false;
     }
 
     public void SelectMap()
@@ -29,9 +29,20 @@ public class MapManager : MonoBehaviour
             {
                 g.GetComponent<MapManager>().isSelected = false;
                 g.GetComponent<MapManager>().mapImage.color = lobbyManager.normalMapColor;
-                g.GetComponent<MapManager>().border.enabled = false;
             }
         }
         mapImage.color = lobbyManager.highlightMapColor;
+    }
+
+    private void Update()
+    {
+        if (isSelected)
+        {
+            border.enabled = true;
+        }
+        else
+        {
+            border.enabled = false;
+        }
     }
 }
